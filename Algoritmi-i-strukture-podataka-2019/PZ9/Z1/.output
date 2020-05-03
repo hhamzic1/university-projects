@@ -1,0 +1,9 @@
+Za dodavanje 3000 elemenata u BinStabloMapu, bilo je potrebno 10 ms.
+Za dodavanje 3000 elemenata u NizMapu, bilo je potrebno 16 ms.
+Za dodavanje 3000 elemenata u hashMapu, bilo je potrebno 77 ms.
+Za pristup elementima BinStabloMape bilo je potrebno 6 ms.
+Za pristup elementima NizMape bilo je potrebno 14 ms.
+Za pristup elementima hashMape bilo je potrebno 63 ms.
+Za brisanje elemenata iz BinStabloMape bilo je potrebno 6 ms.
+Za brisanje elemenata iz NizMape bilo je potrebno 8 ms.
+Za brisanje elemenata iz HashMape bilo je potrebno 266 ms.

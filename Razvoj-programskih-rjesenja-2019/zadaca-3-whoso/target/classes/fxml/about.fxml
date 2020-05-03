@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="49.0" layoutY="40.0" text="%abo.version" />
+      <Label layoutX="49.0" layoutY="74.0" text="%abo.stranica" />
+      <Label layoutX="49.0" layoutY="109.0" text="%abo.git" />
+      <Label layoutX="49.0" layoutY="143.0" text="%abo.namesurname" />
+      <ImageView fx:id="imgVju" fitHeight="290.0" fitWidth="313.0" layoutX="273.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

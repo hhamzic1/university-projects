@@ -1,0 +1,55 @@
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp: In function ‘Vektor3d ZbirVektora(const Vektor3d&, const Vektor3d&)’:
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:52:8: error: ‘double Vektor3d::x’ is private within this context
+     v3.x=v1.x+v2.x;
+        ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:12: note: declared private here
+     double x,y,z;
+            ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:52:13: error: ‘double Vektor3d::x’ is private within this context
+     v3.x=v1.x+v2.x;
+             ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:12: note: declared private here
+     double x,y,z;
+            ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:52:18: error: ‘double Vektor3d::x’ is private within this context
+     v3.x=v1.x+v2.x;
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:12: note: declared private here
+     double x,y,z;
+            ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:53:8: error: ‘double Vektor3d::y’ is private within this context
+     v3.y=v1.y+v2.y;
+        ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:14: note: declared private here
+     double x,y,z;
+              ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:53:13: error: ‘double Vektor3d::y’ is private within this context
+     v3.y=v1.y+v2.y;
+             ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:14: note: declared private here
+     double x,y,z;
+              ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:53:18: error: ‘double Vektor3d::y’ is private within this context
+     v3.y=v1.y+v2.y;
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:14: note: declared private here
+     double x,y,z;
+              ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:54:8: error: ‘double Vektor3d::z’ is private within this context
+     v3.z=v1.z+v2.z;
+        ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:16: note: declared private here
+     double x,y,z;
+                ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:54:13: error: ‘double Vektor3d::z’ is private within this context
+     v3.z=v1.z+v2.z;
+             ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:16: note: declared private here
+     double x,y,z;
+                ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:54:18: error: ‘double Vektor3d::z’ is private within this context
+     v3.z=v1.z+v2.z;
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T9/Z1/main.cpp:8:16: note: declared private here
+     double x,y,z;
+                ^

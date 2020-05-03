@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/NA/Z3/Z1/main.cpp: In function ‘int binarnaPretraga(const std::vector<std::pair<double, double> >&, double, int, int)’:
+/rhome/h/hhamzic1/workspace/NA/Z3/Z1/main.cpp:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

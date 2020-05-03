@@ -1,0 +1,169 @@
+{
+    "id": 8585,
+    "name": "Tehnike programiranja (2016\/2017), Tutorijal 8, Zadatak 5",
+    "language": "C++",
+    "required_compiler": "g++",
+    "preferred_compiler": "g++",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-std=c++11 -O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-std=c++11 -ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 3537,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT1 - izgled maina\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1 2 3\n4 5 6\n\n"
+            },
+            "expected": [
+                "Unesi prvi vektor:\\nX = Y = Z = Unesi drugi vektor:\\nX = Y = Z = Suma ova dva vektora je: {5,7,9}\\nNjihov vektorski prozivod je: {-3,6,-3}\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3538,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT2 - main\n\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "13.2 11.2 1.4\n18.9 2.4 0\n"
+            },
+            "expected": [
+                "Unesi prvi vektor:\\nX = Y = Z = Unesi drugi vektor:\\nX = Y = Z = Suma ova dva vektora je: {32.1,13.6,1.4}\\nNjihov vektorski prozivod je: {-3.36,26.46,-180}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3539,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT3 - unos sa pozitivnim i negativnim brojevima\n\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-13 1.2 -16.4\n18.7 -12.4 -15 "
+            },
+            "expected": [
+                "Unesi prvi vektor:\\nX = Y = Z = Unesi drugi vektor:\\nX = Y = Z = Suma ova dva vektora je: {5.7,-11.2,-31.4}\\nNjihov vektorski prozivod je: {-221.36,-501.68,138.76}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3540,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT4 - testiranje funkcija unos i ispis\nstd::tuple<double, double, double> v;\n\nUnesiVektor(v);\nstd::cout<<std::endl;\nIspisiVektor(v);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-1 -2 0"
+            },
+            "expected": [
+                "X = Y = Z = \\n{-1,-2,0}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3541,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT5 - testiranje funkcija unos, ispis i zbir\nstd::tuple<double, double, double> a,b;\n\nUnesiVektor(a);\nstd::cout<<std::endl;\nUnesiVektor(b);\nstd::cout<<std::endl;\nIspisiVektor(ZbirVektora(a,b));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1.2 -2.3 -0.5\n-13.8 -1 12.1"
+            },
+            "expected": [
+                "X = Y = Z = \\nX = Y = Z = \\n{-12.6,-3.3,11.6}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3542,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT6 - testiranje funkcija unos, ispis i vektorski proizvod\nstd::tuple<double, double, double> a,b;\n\nUnesiVektor(a);\nstd::cout<<std::endl;\nUnesiVektor(b);\nstd::cout<<std::endl;\nIspisiVektor(VektorskiProizvod(a,b));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1.2 -2.3 -0.5\n-13.8 -1 12.1"
+            },
+            "expected": [
+                "X = Y = Z = \\nX = Y = Z = \\n{-28.33,-7.62,-32.94}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

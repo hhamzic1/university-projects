@@ -1,0 +1,565 @@
+%MIT License
+%
+%Copyright (c) 2017 dinkoosmankovic
+%
+%Permission is hereby granted, free of charge, to any person obtaining a copy
+%of this software and associated documentation files (the "Software"), to deal
+%in the Software without restriction, including without limitation the rights
+%to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%copies of the Software, and to permit persons to whom the Software is
+%furnished to do so, subject to the following conditions:
+%
+%The above copyright notice and this permission notice shall be included in all
+%copies or substantial portions of the Software.
+%
+%THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%SOFTWARE.
+
+
+    \documentclass[12pt]{article}
+    \usepackage{amsfonts,amsmath,amssymb}
+    \usepackage{amsmath,multicol,eso-pic}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+    \usepackage{titlesec}
+    \usepackage{enumerate}
+    \usepackage{listings}
+    \usepackage{breqn}
+    \usepackage{tikz}
+    \usepackage{rotating}
+     \usepackage{pgfplots}
+    \usepackage{colortbl}
+    %\renewcommand{\wedge}{~}
+    %\renewcommand{\neg}{\overline}
+    \titleformat{\section}{\large}{\thesection.}{1em}{}
+    
+    
+    % % % % % POPUNITE PODATKE
+    
+    \newcommand{\prezimeIme}{Hamzić Huso}
+    \newcommand{\brIndexa}{18305}
+    \newcommand{\brZadace}{2}
+    \newcommand{\grupa}{DM2 [Pon 15.00]}
+    \newcommand{\demos}{Šeila Bećirović}
+    % % % % % 
+    
+    \begin{document}
+    
+    \thispagestyle{empty}
+    \begin{center}
+      \vspace*{1cm}
+
+      \vspace*{2cm}
+      {\huge \bf Zadaća \brZadace } \\
+      \vspace*{1cm}
+      {\Large \bf iz predmeta Diskretna matematika}
+
+      \vspace*{2cm}
+
+      {\Large Prezime i ime: \prezimeIme} \\
+      \vspace*{0.75cm}
+      {\Large Broj indeksa: \brIndexa} \\
+      \vspace*{0.75cm}
+      {\Large Grupa: \grupa} \\
+      \vspace*{0.75cm}
+      {\Large Odgovorni demonstrator: \demos} \\
+      \vspace*{2cm}
+      \renewcommand{\arraystretch}{1.75}
+      \vfill
+
+
+      {\large Elektrotehnički fakultet Sarajevo}
+
+    \end{center}
+    \newpage
+    \thispagestyle{empty}
+    
+    
+    % % % % % Rješenja zadataka
+	\begin{enumerate}
+		\item Nakon što su završene prijave semestra, 22 studenata se dolazi naknadno prijaviti. S obzirom da je broj studenata na izbornim predmetima ograničen, ispostavilo se da samo tri izborna predmeta imaju slobodna mjesta. Prvi ima 6, drugi 9 i posljednji 7 slobodnih mjesta. Na koliko različitih načina se ovi studenti mogu rasporediti na predmete?
+        \begin{center}
+        \textit{Imamo 22 studenta koja ne razlikujemo te pri odabiru njihov poredak nije bitan što dovodi do zaključka da se ovdje radi o kombinacijama bez ponavljanja.\\
+        Studente iz grupe od 22 studenta koji će upisati prvi izborni predmet(koji ima 6 slobodnih mjesta) možemo izabrati na $C^6_{22}$ načina nakon čega nam ostaje 16 studenata jer smo ih 6 već rasporedili što implicira da studente koji će slušati drugi izborni predmet možemo odabrati na $C^9_{16}$ načina (drugi izborni predmet ima 9 slobodnih mjesta) i analogno kako nam je preostalo 7 studenata, studente koji će slušati treći izborni predmet možemo odabrati na $C^7_{7}$ načina. Prema multiplikativnom principu ukupan broj načina na koji možemo rasporediti 22 studenta na 3 izborna predmeta(uz početne uslove opisane postavkom zadatka) iznosi :\\
+        $C^6_{22} \cdot C^9_{16} \cdot C^7_{7}$ = $22 \choose 6$ $16 \choose 9$ $7 \choose 7$ = $74613 \cdot 11440 \cdot 1$ = \fbox{\textbf{853572720}}
+        }
+	    \end{center}
+		\item Potrebno je formirati sedmočlanu ekipu za međunarodno softversko-hardversko takmičenje. Uvjeti su da ekipa mora imati barem tri studenta sa smjera RI, dok su studenti drugih smjerova poželjni (zbog većeg hardverskog znanja) ali ne i obavezni. Za takmičenje se prijavilo 8 studenata smjera RI i 6 studenata smjera AiE (dok studenti drugih smjerova nisu bili zainteresirani). Odredite na koliko načina je moguće odabrati traženu ekipu. Koliko će iznositi broj mogućih ekipa ukoliko se postavi dodatno ograničenje da ekipa mora imati i barem dva studenta smjera AiE?
+		\begin{center}
+		\textit{U ovom problemu trebamo izabrati k studenata RI i 7-k studenata AiE, pri čemu k može biti 3, 4, 5, 6 ili 7 (traže se barem 4 studenta RI, a ekipa može imati maksimalno 7 članova).\\Za fiksno k, k studenata RI i 7-k studenata AiE možemo izabrati na $C^k_8 \cdot C^{7-k}_6$ načina.\\Primjenom aditivnog principa dobijamo da je traženi broj ekipa:\\$C^3_8 \cdot C^{4}_6$ + $C^4_8 \cdot C^{3}_6$ + $C^5_8 \cdot C^{2}_6$ + $C^6_8 \cdot C^{1}_6$ + $C^7_8 \cdot C^{0}_6$=
+		840 + 1400 + 840 + 168 + 8 = \fbox{3256 ekipa}\\
+		\vspace{0.75cm}
+		Ako se postavi dodatno ograničenje da u ekipi moraju biti i barem 2 studenta AiE onda broj ekipa dobijamo jednostavno odbacujući zadnja dva sabirka prethodnog računa(jer u njima se računa kada biramo 1 člana sa AiE i 0 članova sa AiE a što je u kontradikciji sa zahtjevom).
+		Pa broj načina na koji možemo sastaviti ekipu uz uslov da ona mora sadržavati barem 2 studenta sa AiE iznosi : 840+1400+840 = \fbox{3080 načina.}}
+	    \end{center}
+	    \vspace{0.75cm}
+		\item Ploča veličine 17 x 17 je podijeljena na jednake kvadrate. Dva kvadrata su obojena žutom bojom, a ostali su obojeni zelenom bojom. Dvije kolor šeme ploče su ekvivalentne ako rotiranjem jedne možemo dobiti drugu. Koliko različitih kolor šema ploče se može napraviti?
+		\newpage
+		\begin{center}
+		\textit{Ovaj zadatak mi je teško riječima objasniti, ali ću pokušati. Uglavnom ako od broja kvadrata proizvoljno izaberemo dva kvadrata što možemo uraditi na $17^2 \choose 2$ načina, tada primjećujemo da zbog broja strana ploče(4 strane) imat ćemo sigurno još 4 para po 2 kvadrata(pored naših izabranih) koji će rotiranjem dati istu kolor šemu, pa naš odabir moramo podijeliti sa 4. Sad imamo $\frac{1}{4} \cdot$ $17^2 \choose 2$ različitih kolor šema. Ali sada primjećujemo da je ova naša procjena gruba jer imamo pod slučaj ako slučajno izaberemo dva kvadrata koja su sa suprotne strane dijagonala(odnosno da jedan kvadrat izaberemo od $\frac{17^2 - 1}{2}$ kvadrata, što predstavlja broj kvadrata ispod dijagonale) onda broj njemu simetričnih kvadrata u odnosu na dijagonalu (i sa njom) iznosi 4, pa moramo podijeliti sa 4 naš izbor i dodati na prethodni slučaj. Pa je ukupan broj različitih kolor šema jednak:
+		\\
+		$\frac{1}{4} \cdot$ $17^2 \choose 2$ $+\ \frac{17^2 - 1}{8}$ = \fbox{10440}}
+	    \end{center}
+		\item Na stolu se nalazi određena količina papirića, pri čemu se na svakom od papirića nalazi po jedno slovo. Na 3 papirića se nalazi slovo X, na 3 papirića se nalazi slovo L, na 3 papirića slovo M i na 4 papirića slovo Y. Odredite koliko se različitih šestoslovnih riječi može napisati slažući uzete papiriće jedan do drugog (nebitno je imaju li te riječi smisla ili ne).
+		\begin{center}
+		\textit{Ovdje se očito radi o k-permutacijama multiskupa s ponavljanjima odnosno traži se \\$\overline{P}^6_{4; 3, 3, 3, 4}$\\
+		Pa možemo primjeniti funkciju izvodnicu :
+		\vspace{0.25cm}\\
+		$\Psi _{n;\ m_1,\ m_2,\ ...,m_n}(t)$ = $\prod_{i=1}^{n}\sum_{j=0}^{m_i} \frac{t^j}{j!}$ iz koje tražimo koeficijent uz $t^6$. \\
+		$(1\ + \ t \ + \ \frac{t^2}{2!}\ + \ \frac{t^3}{3!})^3$ 
+		$\cdot \ (1\ + \ t \ + \ \frac{t^2}{2!}\ + \ \frac{t^3}{3!} + \ \frac{t^4}{4!})$ =\vspace{0.25cm} \\
+		$\frac{t^{13}}{5184} \ + \ \frac{(13 t^{12})}{5184} \ + \  \frac{(31 t^{11})}{1728} \ + \  \frac{155 t^{10}}{1728} \ + \  \frac{295 t^9}{864} + \frac{33 t^8}{32} \ + \  \frac{121 t^7}{48} \ + \  \frac{241 t^6}{48} \ + \  \frac{65 t^5}{8} \ + \  \frac{253 t^4}{24} \ + \  \frac{32 t^3}{3} \ + \  8t^2 \ + \  4t \ + \  1$\\
+		\vspace{0.25cm}
+		Odakle vidimo da je koeficijent uz $t^6 = \frac{241}{48}$. Pa je broj različitih šestoslovnih riječi koje možemo napisati slažući uzete papiriće jedan do drugog jednak : \\
+		\vspace{0.15cm} $k! \cdot \frac{241}{8} = 6! \cdot \frac{241}{8}$ = \fbox{\textbf{3615}}
+		}
+	    \end{center}
+		\item Odredite koliko se različitih paketa koji sadrže 6 voćki može napraviti ukoliko nam je raspolaganju 5 krušaka, 3 kajsije, 3 smokve, 3 breskve i 1 banana (pri čemu se pretpostavlja da ne pravimo razliku između primjeraka iste voćke).
+		\begin{center}
+		\textit{Problem je najlakše riješiti preko funkcija izvodnica, odnosno riječ je o kombinacijama sa ponavljanjem multiskupa(\ $\overline{C}^k_{n; m_1, m_2, ..., m_n}$) čija funkcija izvodnica glasi\\
+		\vspace{0.25cm}
+		$\varphi _{n;\ m_1,\ m_2,\ ...,m_n}(t)$ = $\prod_{i=1}^{n}\sum_{j=0}^{m_i} t^j$\\
+		\vspace{0.25cm} Za konkretan slučaj $\overline{C}^6_{5;5, 3, 3, 3, 1}$ imamo:\\ \vspace{0.20cm}
+		$ (1+t+t^2+t^3+t^4+t^5)(1+t+t^2+t^3)^3(1+t)$
+		\vspace{0.15cm}
+		\\$t^{15} + 5 t^{14} + 14 t^{13} + 30 t^{12} + 52 t^{11} + 76 t^{10} + 97 t^9 + 109 t^8 + 109 t^7 + 97 t^6 + 76 t^5 + 52 t^4 + 30 t^3 + 14 t^2 + 5 t + 1$\\
+		\vspace{0.20cm} Nas interesuje član uz $t^6$, pa je traženi rezultat \fbox{\textbf{97 načina raspodjele voćki.}}
+		}
+	    \end{center}
+	    \newpage
+		\item Odredite na koliko načina se može rasporediti 26 identičnih kuglica u 7 različitih kutija, ali tako da u svakoj kutiji bude najviše 5 kuglica.
+		\begin{center}
+		\textit{I u ovom zadatku je potrebno odrediti broj kombinacija sa ponavljanjem klase 26 skupa od 7 elemenata(gdje su elementi kutije) u kojoj se svaki element(kutija) javlja najviše 5 puta($\overline{C}^{26}_{7;5, 5, 5, 5, 5,5,5}$). Odnosno traži se koeficijent uz $t^{26}$ u razvoju funkcije izvodnice :\\ 
+		\vspace{0.15cm}
+		$\varphi(t) = (1+t+t^2+t^3+t^4+t^5)^7 \ = \ $
+		\\
+		\vspace{0.15cm}
+		$t^{35} + 7 t^{34} + 28 t^{33} + 84 t^{32} + 210 t^{31} + 462 t^{30} + 917 t^{29} + 1667 t^{28} + 2807 t^{27} + 4417 t^{26} + 6538 t^{25} + 9142 t^{24} + 12117 t^{23} + 15267 t^{22} + 18327 t^{21} + 20993 t^{20} + 22967 t^{19} + 24017 t^{18} + 24017 t^{17} + 22967 t^{16} + 20993 t^{15} + 18327 t^{14} + 15267 t^{13} + 12117 t^{12} + 9142 t^{11} + 6538 t^{10} + 4417 t^9 + 2807 t^8 + 1667 t^7 + 917 t^6 + 462 t^5 + 210 t^4 + 84 t^3 + 28 t^2 + 7 t + 1$
+		\\ \vspace{0.15cm}
+		Odakle vidimo da je koeficijent uz $t^{26} = 4417$. Pa je broj načina na koji možemo rasporediti date kuglice uz uslove u zadatku jednak :
+		\\
+		\vspace{0.15cm} n = \fbox{\textbf{4417}}
+		}
+	    \end{center}
+		\item Odredite na koliko načina se 11 različitih predmeta upakovati u 8 identičnih vreća (koje nemaju nikakav identitet po kojem bi se mogle razlikovati), pri čemu se dopušta i da neke od vreća ostanu prazne.
+		\begin{center}
+		\textit{Problem je po dvanaestostrukom načinu ekvivalentan sumi $\sum^k_{i=0}$ $S^i_n$, odnosno u našem slučaju \\$\sum^8_{i=0}$ $S^i_{11}$. \\Raspišimo tabelu za traženje Stirlingovog broja druge vrste:\\}
+		\end{center}
+		\vspace{0.25cm}
+		\begin{center}
+		\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+		    n/k & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+		    \hline 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+		    \hline 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+		    \hline 2 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0\\
+		    \hline 3 & 0 & 1 & 3 & 1 & 0 & 0 & 0 & 0 & 0\\
+		    \hline 4 & 0 & 1 & 7 & 6 & 1 & 0 & 0 & 0 & 0\\
+		    \hline 5 & 0 & 1 & 15 & 25 & 10 & 1 & 0 & 0 & 0\\
+		    \hline 6 & 0 & 1 & 31 & 90 & 65 & 15 & 1 & 0 & 0\\
+		    \hline 7 & 0 & 1 & 63 & 301 & 350 & 140 & 21 & 1 & 0\\
+		    \hline 8 & 0 & 1 & 127 & 966 & 1701 & 1050 & 266 & 28 & 1\\
+		    \hline 9 & 0 & 1 & 255 & 3025 & 7770 & 6951 & 2646 & 462 & 36\\
+		    \hline 10 & 0 & 1 & 511 & 9330 & 34105 & 42525 & 22827 & 5880 & 750\\
+		    \hline 11 & 0 & 1 & 1023 & 28501 & 145750 & 246730 & 179487 & 63987 & 11880\\
+		\end{tabular}\\
+		\end{center}
+		\begin{center}
+		\textit{Rješenje će biti suma elemenata posljednjeg reda:\\
+		 $\sum^8_{i=0}$ $S^i_{11}$ = 0 + 1 + 1023 + 28501 + 145750 + 246730 + 179487 + 63987 + 11880\\
+		 \vspace{0.15cm}
+		 $\sum^8_{i=0}$ $S^i_{11}$ = 109299, pa je opisanu raspodjelu predmeta u vreće moguće učiniti na \fbox{\textbf{677359 načina.}}
+		 }
+	    \end{center}
+	    \newpage
+		\item Odredite na koliko se načina može 15 kamenčića razvrstati u 4 gomilica. Pri tome se i kamenčići i gomilice smatraju identičnim (odnosno ni kamenčići ni gomilice nemaju nikakav identitet po kojem bi se mogli razlikovati).
+		\begin{center}
+		\textit{Pošto se ni kamenčići ni gomilice ne mogu razlikovati svaki raspored je
+u potpunosti opisan brojem kamenčića na svakoj gomilici. Nije bitno koliki
+je broj kamenčića na odredenoj gomlici, već samo raspodjela kamenčića po
+gomilicama, tako da ovaj problem možemo posmatrati tako da svaki raspored
+kamenčića na gomilice posmatramo kao rastavu broja 15 na 4 sabirka iz skupa
+prirodnih brojeva, pri čemu poredak sabiraka nije bitan. Iz ovog slijedi da se
+problem može modelirati kao problem nalaženja broja particija broja 15 na tačno 4 sabirka, odnosno $p^4_{15}$. U našem slučaju tražimo prvo $q^4_{15}$:\\
+\vspace{0.20cm}
+		Vrijedi $q^k_n = q^{k-1}_n + q^k_{n-k}$, pa raspisujemo tabelu:\\
+		}
+		\vspace{0.35cm}
+			\begin{tabular}{c|c|c|c|c}
+		         n/k & 1 & 2 & 3 & 4    \\
+		    \hline 0 & 1 & 1 & 1 & 1 \\
+		    \hline 1 & 1 & 1 & 1 & 1  \\
+		    \hline 2 & 1 & 2 & 2 & 2  \\
+		    \hline 3 & 1 & 2 & 3 & 3  \\
+		    \hline 4 & 1 & 3 & 4 & 5  \\
+		    \hline 5 & 1 & 3 & 5 & 6  \\
+		    \hline 6 & 1 & 4 & 7 & 9 \\
+		    \hline 7 & 1 & 4 & 8 & 11  \\
+		    \hline 8 & 1 & 5 & 10 & 15  \\
+		    \hline 9 & 1 & 5 & 12 & 18 \\
+		    \hline 10 & 1 & 6 & 14 & 23  \\
+		    \hline 11 & 1 & 6 & 16 & 27  \\
+		    \hline 12 & 1 & 7 & 19 & 34  \\
+		    \hline 13 & 1 & 7 & 21 & 39  \\
+		    \hline 14 & 1 & 8 & 24 & 47  \\
+		    \hline 15 & 1 & 8 & \textbf{27} & \textbf{54} \\
+		\end{tabular}\\
+		\vspace{0.35cm}
+		\textit{Kako je $p^k_n = q^k_n - q^{k-1}_n$ uvrštavajući dobijamo\\
+		\vspace{0.15cm}
+		$p^4_{15} = q^4_{15} - q^{3}_{15} $ = 54 - 27 = \fbox{\textbf{27 načina za raspodjelu kamenčića.}}
+		}
+	    \end{center}
+		\item Odredite na koliko načina se broj 14 može rastaviti na sabirke koji su prirodni brojevi, pri čemu njihov poredak nije bitan, ali pod dodatnim uvjetom da se sabirak 3 smije pojaviti najviše 3 puta, dok se sabirak 2 smije pojaviti samo paran broj puta.
+		\begin{center}
+		\textit{Problem je najlakše riješiti preko funkcija izvodnica pri čemu posebno modeliramo zagrade sa sabircima 2 i 3, dok zagradu koja bi sadržala $(1+t^{14})$ izostavljamo jer bi to podrazumijevalo da se 14 može napisati kao 14 + 0 a 0 nije prirodan broj (odnosno besmisleno je 14 rastaviti na 14):\\
+		$\varphi = (1 + t + t^2 + t^3 + t^4 + t^5 + t^6 + t^7 + t^8 + t^9 + t^{{10}} + t^{11} + t^{12} + t^{13} + t^{14})(1 + t^4 + t^8 + t^{12})(1 + t^3 + t^6 + t^9)(1 + t^4 + t^8 + t^{12})(1 + t^5 + t^{10})(1 + t^6 + t^{12})(1 + t^7 + t^{14})(1 + t^8)(1 + t^9)(1 + t^{10})(1 + t^{11})(1 + t^{12})(1 + t^{13})$\\
+		\vspace{0.15cm}
+		$\varphi = t^{146} + t^{145} + t^{144} + 2 t^{143} + 4 t^{142} + 5 t^{141} + 7 t^{140} + 10 t^{139} + 15 t^{138} + 20 t^{137} + 27 t^{136} + 36 t^{135} + 49 t^{134} + 64 t^{133} + 83 t^{132} + 105 t^{131} + 134 t^{130} + ... + 105 t^{15} + 83 t^{14} + 64 t^{13} + 49 t^{12} + 36 t^{11} + 27 t^{10} + 20 t^9 + 15 t^8 + 10 t^7 + 7 t^6 + 5 t^5 + 4 t^4 + 2 t^3 + t^2 + t + 1$\\
+		\vspace{0.15cm}
+		Nas zanima član uz $t^{14}$, to je 83 i ujedno ukupan broj načina (pogodnih particija) za podjelu 14 na sabirke uz odgovarajuće kriterije. Dakle broj 14 se ovako može rastaviti na sabirke na \fbox{\textbf{83 načina.}}\\
+		Ako je međutim i dozvoljena rastava 14 na jedan sabirak koji je 14(14=14). Tada je broj načina 83+1=84}
+	    \end{center}
+	    \vspace{0.75cm}
+		\item Ana i Boris parkiraju auta na praznom parkiralištu koje se sastoji od 16 mjesta u jednom redu. Vjerovatnoća parkiranja na mjesta je jednaka. Koja je vjerovatnoća da su parkirali auta tako da se između auta nalazi najviše jedno prazno mjesto za parkiranje?
+		\begin{center}
+		\vspace{0.30cm}
+		\textit{Razlikujemo 3 slučaja:\\ \vspace{0.15cm}
+		1)Kad je jedno auto već parkirano na kraju(s jedne strane) parkinga, tada imamo 2 načina da se druga osoba parkira. Kako parking ima dva kraja onda broj načina množimo sa 2 ($2\cdot2 = 4$ načina)\\
+		\vspace{0.15cm}
+		2)Kad je jedno auto već parkirano jedno mjesto od kraja parkinga(s jedne strane) tada imamo 3 načina da se druga osoba parkira. Kako parking ima dva kraja onda broj načina množimo sa 2($3\cdot2 = 6$ načina)\\
+		\vspace{0.15cm}
+		3)za sva ostala parking mjesta(kojih ima n-4 jer smo pokrili prije slučajeve za 4 parking mjesta) imamo po 4 načina da parkiramo drugo auto, ako je prvo auto već parkirano na jednom od mjesta.
+		\\ \vspace{0.30cm}
+		Sada saberimo sve načine za parkiranje(parkiranje po uslovu zadatka)
+		\\
+		$4(n-4) + 2\cdot2 + 2\cdot3 = 4n - 6$
+		\\ \vspace{0.15cm}
+		Kako je broj načina za parkiranje(bez ikakvih ograničenja) $n(n-1)$ tada će naša tražena vjerovatnoća iznositi $\frac{4n-6}{n(n-1)}$ \\gdje je n broj parking mjesta.\\ Kako je u našem slučaju n=16, vjerovatnoća će iznositi:\\
+		\vspace{0.15cm}
+		$P = \frac{4(16-4)+6+4}{16\cdot15} = \frac{58}{240} \approx $ \fbox{\textbf{0.2416}} 
+		}
+		
+	    \end{center}
+		\item U nekoj kutiji nalazi se 120 kuglica, od kojih je 12 kuglica crne boje, dok su ostale kuglice bijele. Ukoliko nasumice izaberemo 9 kuglica iz kutije, nađite vjerovatnoću da će:\\
+a) sve izabrane kuglice biti bijele;\\
+b) tačno jedna izabrana kuglica biti crna;\\
+c) barem jedna izabrana kuglica biti crna;\\
+d) tačno dvije izabrane kuglice biti crne;\\
+e) barem dvije izabrane kuglice biti crne;\\
+f) najviše dvije izabrane kuglice biti crne;\\
+g) najviše dvije izabrane kuglice biti bijele;\\
+h) sve izabrane kuglice biti crne.
+		\begin{center}
+		\textit{
+		Broj načina da izvučemo nasumično 9 kuglica iz kutije iznosi\\
+		t = $120 \choose 9$ $= \frac{120!}{9!\cdot111!}$\\
+		\vspace{0.15cm}
+		a)To znači da smo od 108 bijelih kuglica odabrali njih 9, a od crnih (kojih ima 12) nijednu. Pa je broj povoljnih događaja za slučaj pod a) prema multiplikativnom principu jednak :\\ n = $108 \choose 9$ $12\choose0$ = $\frac{108!}{9!\cdot99!}$\\
+		Pa je naša tražena vjerovatnoća $P_{(a)}=\frac{\frac{108!}{9!\cdot99!}}{\frac{120!}{9!\cdot111!}}$\\
+		\fbox{$P_{(a)} \approx 0.374 \approx 37.4\% $}
+		\\ \vspace{0.15cm}
+		b) To znači da je izabrana jedna crna i 8 bijelih odnosno:\\
+		n = $108 \choose 8$ $12\choose1$ odnosno vjerovatnoća je $\frac{n}{t}$ \\ \vspace{0.15cm}
+		\fbox{$P_{(b)} \approx 0.404 \approx 40.4\% $} \\ \vspace{0.15cm}
+		c) barem jedna kuglica mora biti crna\\
+		To znači da samo ako izvučemo sve bijele nije povoljan slučaj, a ta vjerovatnoća je izračunata pod a). Pa je vjerovatnoća da će među izvučenim kuglicama barem jedna biti crna: \\
+		\vspace{0.15cm}
+		\fbox{$P_{(c)} = 1 - P_{(a)} = 1 - 0.374 = 0.626 = 62.6\%$} \\ 
+		\vspace{0.25cm}
+		d) Analogno kao pod b) \\ 
+			n = $108 \choose 7$ $12\choose2$ odnosno vjerovatnoća je $\frac{n}{t}$ \\
+			\vspace{0.15cm}
+			\fbox{$P_{(d)} \approx 0.176 \approx 17.6\% $} \\ \vspace{0.15cm}
+		e)  Saberemo vjerovatnoće kada izvučemo sve bijele i tačno jednu crnu što
+            već imamo pod a) i b) i oduzmemo od 1. \\ \vspace{0.15cm}
+            \fbox{$P_{(e)} = 1 - (P_{(a)} + P_{(b)}) = 1 - (0.374 + 0.404) = 0.222 = 22.2\%$} \\ \vspace{0.25cm}
+        f) Najviše dvije izabrane kuglice biti crne \\ \vspace{0.15cm}
+        Ovo je zbir vjerovatnoća kad nije izvučena nijedna crna, kad je izvučena tačno jedna crna i kad su izvučene tačno dvije crne kuglice. Odnosno : \\ \vspace{0.15cm}
+        \fbox{$P_{(f)} = P_{(a)} + P_{(b)} + P_{(d)}   = 0.374 + 0.404 + 0.176) = 0.954 = 95.4\%$} \\ \vspace{0.25cm}
+        g) najviše dvije izabrane kuglice biti bijele \\ \vspace{0.15cm}
+        Ova vjerovatnoća je zbir vjerovatnoća kada nije izvučena nijedna bijela, kada je izvučena tačno jedna bijela i kad su izvučene tačno dvije bijele kuglice. Odnosno \\
+        \vspace{0.15cm}
+        (nijedna bijela/sve crne) $P_{(x)} = \frac{{12\choose9}}{t} \approx 2.1\cdot 10^{-11} $ \\ \vspace{0.15cm}
+        (tačno jedna bijela) $P_{(y)} = 108\cdot \frac{{12\choose8}}{t} \approx 5.1\cdot 10^{-9} $
+        \\ \vspace{0.15cm}
+        (tačno dvije bijele) $P_{(z)} = 5778\cdot \frac{{12\choose7}}{t} \approx 4.37\cdot 10^{-7} $
+        \\ \vspace{0.25cm}
+        Pa je naša vjerovatnoća jednaka : \\ \vspace{0.15cm}
+         \fbox{$P_{(g)} = P_{(x)} + P_{(y)} + P_{(z)} \approx 4.427\cdot 10^{-7}$} \\ \vspace{0.25cm}
+         h) sve izabrane kuglice biti crne\\
+         A ovo smo već riješili pod g) odnosno to je isto što i $P_{(x)}$ pa je naša vjerovatnoća : \\ \vspace{0.25cm}
+         \fbox{$P_{(h)} = P_{(x)} \approx 2.1\cdot 10^{-11} $} \\ \vspace{0.25cm}
+		}
+	    \end{center}
+	    \newpage
+		\item Neka je dat pravičan novčić, tj. novčić kod kojeg je jednaka vjerovatnoća pojave glave ili pisma prilikom bacanja. Ako bacimo takav novčić 60 puta, očekujemo da će otprilike 30 puta pasti glava i isto toliko puta pismo. Međutim, to naravno ne znači da će sigurno biti tačno 30 pojava glave ili pisma (štaviše, vjerovatnoća da se tačno to desi je prilično mala). Odredite:\\
+		a) Vjerovatnoću da će se zaista pojaviti 30 puta glava i 30 puta pismo; \\
+        b) Vjerovatnoću da će se glava pojaviti više od 26 a manje od 34 puta;\\
+        c) Vjerovatnoću da će se glava pojaviti više od 23 a manje od 37 puta.\\
+        d) Vjerovatnoću da se glava neće pojaviti dva puta zaredom.
+		
+		\begin{center}
+		\textit{
+		a) Kako se novčić baca 60 puta, vjerovatnoća da će pasti pismo je jednaka vjerovatnoći da će pasti glava odnosno ona iznosi $\frac{1}{2}$. Nama se traži vjerovatnoća da će se pojaviti tačno 30 puta glava i 30 puta pismo u 60 bacanja, nebitno kojim redoslijedom se šta pojavljuje, pa je naša vjerovatnoća : \\ \vspace{0.15cm}
+		\fbox{$P_{(a)} = C^{30}_{60} \cdot (\frac{1}{2})^{30} \cdot (\frac{1}{2}))^{60-30} \approx 10.2\% $} \\ \vspace{0.25cm}
+		b)Vjerovatnoću da će se glava pojaviti više od 26 a manje od 34 puta; \\
+Sada na isti način računamo mogućnosti za n=27,28, ... 33 s tim da su za n=27, n=28 i n=29
+iste vjerovatnoće kao i za n=33, n=32, n=31,jer je vjerovatnoća da se pojavila 27 puta glava i 33 puta pismo ista kao i vjerovatnoća da se pojavilo 27 puta pismo i 33 puta glava.
+Pa još pored verovatnoće izračunate pod a) trebamo izračunati vjerovatnoće za n=27, n=28 i n=29
+\\ \vspace{0.25cm}
+(n=27) $P_1 =  C^{27}_{60} \cdot (\frac{1}{2})^{27} \cdot (\frac{1}{2}))^{33} \approx 0.076 $
+\\ \vspace{0.15cm}
+(n=28) $P_2 =  C^{28}_{60} \cdot (\frac{1}{2})^{28} \cdot (\frac{1}{2}))^{32} \approx 0.089 $
+\\ \vspace{0.25cm}
+(n=29) $P_3 =  C^{29}_{60} \cdot (\frac{1}{2})^{29} \cdot (\frac{1}{2}))^{31} \approx 0.099 $
+\\ \vspace{0.25cm}
+Pa je $P_{(b)} = 2P_1 + 2P_2 + 2P_3 + P_{(a)}$ \\ \vspace{0.15cm}
+\fbox{$P_{(b)} = 0.102 + 0.152 + 0.178 + 0.198 = 0.63 = 63\%$}
+\\ \vspace{0.25cm}
+c)Vjerovatnoću da će se glava pojaviti više od 23 a manje od 37 puta.\\
+Na vjerovatnoću pod b) treba dodati udvostručeno vjerovatnoću za n=24, n=25, n=26 \\
+\vspace{0.15cm}
+(n=24) $P_1 =  C^{24}_{60} \cdot (\frac{1}{2})^{24} \cdot (\frac{1}{2}))^{36} \approx 0.031 $
+\\ \vspace{0.15cm}
+(n=25) $P_1 =  C^{25}_{60} \cdot (\frac{1}{2})^{25} \cdot (\frac{1}{2}))^{35} \approx 0.045 $
+\\ \vspace{0.15cm}
+(n=26) $P_1 =  C^{26}_{60} \cdot (\frac{1}{2})^{26} \cdot (\frac{1}{2}))^{34} \approx 0.060 $
+\\ \vspace{0.15cm}
+Pa je $P_{(c)} = 2P_1 + 2P_2 + 2P_3 + P_{(b)}$ \\ \vspace{0.15cm}
+\fbox{$P_{(b)} = 0.062 + 0.090 + 0.120 + 0.63 = 90.2\%$}
+\\ \vspace{0.25cm}
+d)
+Definišimo dvije funkcije, i to:
+G(n) = broj kombinacija za n bacanja novčića u kojima se glava ne pojavljuje
+2 puta zaredom i koje završavaju sa glavom\\ \vspace{0.25cm}
+P(n) = broj kombinacija za n bacanja novčića u kojima se glava ne pojavljuje
+2 puta zaredom i koje završavaju sa pismom\\
+Za n=1 i n=2 imamo trvijalna rješenja:\\ \vspace{0.15cm}
+G(1) = 1\\
+P(1) = 1\\
+G(2) = 1\\
+P(2) = 2\\
+\vspace{0.25cm}
+Uspostavimo rekurzivnu relaciju za veće n. Ako kombinacija završava
+sa glavom, to znači da je prethodna kombinacija sigurno završila sa pismom,
+odnosno\\ \vspace{0.15cm}
+G(n) = P(n – 1)\\ \vspace{0.15cm}
+Medutim ako je kombinacija završila na pismo, to znači da je prethodna
+mogla završavati na pismo i na glavu, odnosno\\ \vspace{0.15cm}
+P(n) = G(n – 1) + P(n – 1)\\ \vspace{0.15cm}
+Sada možemo prvu formulu uvrstiti u drugu ( za G(n – 1) = P(n – 2) ), pa
+imamo\\ \vspace{0.15cm}
+P(n) = G(n – 1) + P(n – 1) = P(n – 2) + G(n – 1) \\ \vspace{0.25cm}
+Ovo su fibonacijevi brojevi pomjereni za jedan, tj. P(n) = F(n + 1), a
+kako je G(n) = P(n – 1) to je G(n) = F(n). Pa sada broj povoljnih
+događaja (X) imamo G(60) + P(60). \\ \vspace{0.25cm}
+Odnosno $X = F(60) + F(61) = 1548008755920 + 2504730781961 \approx 4.05 \cdot 10^{12}$ \\ 
+a kako je broj mogućih događaja $Y = 2^{60}$ iz ovog slijedi da je tražena vjerovatnoća : 
+\\ \vspace{0.25cm}
+\fbox{$P_{(a)}=\frac{X}{Y} = 3.51 \cdot 10^{-6}$}
+		}
+	    \end{center}
+		\item Odredite vjerovatnoću da će u skupini od 9 nasumično izvučenih karata iz dobro izmješanog špila od 52 karte tri karte biti sa slikom i pet karata crvene boje (herc ili karo).
+		\begin{center}
+		\textit{
+		Napravimo disjunktne skupove, i to 4 disjunktna skupa: \\
+1. Karte koje su crvene boje i koje su  sa slikom - imamo 6 karata \\
+2. Karte koje su slike, ali nisu crvene boje - imamo 6 karata \\
+3. Karte koje su crvene boje i nisu sa slikom - imamo 20 karte \\
+4. Karte koje nisu crvene i nisu slike - imamo 20 karte \\
+\vspace{0.25cm}
+Sa strane sam sebi nacrtao tabelu(kao na tutorijalu) za koju nemam vremena da prekucam u latex (kucam 1.12.2019 :( )
+\vspace{0.25cm}
+Pa imamo redom slučajeve \\ \vspace{0.15cm}
+$n_1 = {6\choose3}{20\choose2}{6\choose0}{20\choose4} = 18411000$ \\ \vspace{0.15cm}
+$n_2 = {6\choose2}{20\choose3}{6\choose1}{20\choose3} = 116964000$ \\ \vspace{0.15cm}
+$n_3 = {6\choose1}{20\choose4}{6\choose2}{20\choose2} = 82849500$ \\ \vspace{0.15cm}
+$n_1 = {6\choose0}{20\choose5}{6\choose3}{20\choose1} = 6201600$ \\ \vspace{0.15cm}
+pa je $n = n_1+n_2+n_3+n_4 = 224426100$ \\ \vspace{0.25cm}
+Pa je tražena vjerovatnoća : \fbox{$P = \frac{n}{C^9_{52}} = 0.061 \approx 6.1\%$}
+}
+	    \end{center}
+	     
+		\item Profesor Greškić često griješi u naučnim činjenicama i na pitanja studenata odgovara netačno s vjerovatnoćom 0.25, neovisno od pitanja. Na svakom predavanju profesora Greškića pitaju ili 1 ili 2 pitanja, pri čemu imamo jednaku vjerovatnoću pojave 1 ili 2 pitanja.\\
+		a)Koja je vjerovatnoća da će profesor Greškić odgovoriti netačno na sva pitanja?\\
+		b)Koja je vjerovatnoća da su postavljena dva pitanja, ako je profesor Greškić odgovorio na sva pitanja netačno?
+		
+		\begin{center}
+		\textit{
+		Označimo sa $A_1$ dogadaj da je profesoru postavljeno 1 pitanje, a sa $A_2$
+da su postavljena 2 pitanja. Iz uslova zadatka imamo da je p($A_1$) = 0.5 i
+p($A_2$) = 0.5. Sada označimo sa $B_1$ dogadaj da je profesor odgovorio pogrešno
+na pitanje, pa imamo da je p($B_1$) = 0.25. \\ \vspace{0.25cm}
+a) Koja je vjerovatnoća da će profesor Greškić odgovoriti netačno na sva
+pitanja?\\
+Sada posmatrajmo uvjetnu vjerovatnoću. Koja je vjerovatnoća da je profesor odgovorio netačno ako se desio dogadaj $A_1$, i koja je vjerovatnoća da je
+odgovorio netačno ako se desio dogadaj $A_2$.\\ Odnosno izračunajmo p($B_1$/$A_1$)
+i p($B_1/A_2$).\\ \vspace{0.25cm}
+Za p($B_1$/$A_1$) je trivijalno jer ako je postavljeno jedno pitanje i vjerovatnoća
+da će pogrešno odgovoriti je 0.25 onda je p($B_1$/$A_1$) = 0.25 \\ \vspace{0.25cm}
+Za p($B_1$/$A_2$) je malo drugačije. 
+\\Pošto su postavljena 2 pitanja
+i vjerovatnoća da će na svako postavljeno pitanje odgovoriti netačno je 0.25, to
+znači da će na oba pitanja odgovoriti netačno $(0.25)^2 = 0.0625$ \\ \vspace{0.25cm}
+Pa je  p($B_1$/$A_2$) = 0.0625 \\ \vspace{0.25cm}
+Kako imamo sve što nam treba, vjerovatnoća\\ \vspace{0.25cm} \fbox{$P_{(a)} = 0.5\cdot0.25 + 0.0625\cdot0.5 = 15.625\% $}
+\\ \vspace{0.25cm}
+U ovom slučaju uslov je da je profesor odgovorio netačno na sva pitanja, što
+smo već izračunali da je 15.625\%. Sada tražimo vjerovatnoću da su postavljena 2
+pitanja, što se vrlo jednostavno dobija kada vidimo koliki je udio p($B_1$/$A_2$)
+u ukupnom procentu od 15.625\%, a to računamo : \\
+\vspace{0.25cm}
+\fbox{$P_{(b)} = \frac{p(B_1/A_2) \cdot p(A_2)}{0.15625} = \frac{0.0625 \cdot 0.5}{0.15625} = 0.2 = 20\%$}
+
+		
+		}
+		\end{center}
+		
+		\item Muzičari Aria i Bolero su jedine osobe koje su se prijavile na takmičenje za novi jingle. Svaki takmičar može priložiti samo jedan jingle. Sudac Libretto proglašava pobjednika čim dobije dovoljno besmislen jingle, što se uopšte ne mora desiti. Aria piše besmislene jingle-ove brzo, ali loše. Vjerovatnoća da će prva predati je 0.69. Ako Bolero nije već pobijedio, Aria će biti proglašena pobjednikom sa vjerovatnoćom 0.23. Bolero sporo piše, ali je talentovan za ovo. Ako Aria nije pobijedila do vremena Bolerovog slanja jingla, Bolero će pobijediti s vjerovatnoćom 0.66.
+		
+		\begin{center}
+		\textit{
+		Definišimo dogadaje: \\
+A1 - Aria je prva predala\\
+B1 - Bolero je prvi predao\\
+A2- Aria je pobijedila, ako Bolero do tad nije\\
+B2 - Bolero je pobijedio, ako Aria do tad nije\\
+\vspace{0.25cm}
+Vjerovatnoće su \\ 
+p(A1) = 0.69\\
+p(B1) = p(1 – A1) = 0.31\\
+p(A2) = 0.23\\
+p(B2) = 0.66\\
+\vspace{0.25cm}
+a) Vjerovatnoća da niko neće pobijediti se računa tako što se
+pomnože vjerovatnoće da Azra ne pobijedi, i Bolero također.\\
+\vspace{0.25cm} 
+\fbox{$P_{(a)} = (1 - p(A2))\cdot(1-p(B2)) = (1 - 0.23)(1 - 0.66) = 0.2618 = 26.18\%$}
+\\ \vspace{0.25cm}
+b) Ovo ćemo rastaviti na 2 slučaja, kada Aria preda prva i pobijedi, i drugi
+slučaj kada Bolero preda prvi i ne pobijedi, pa onda Aria pobijedi. \\
+\vspace{0.25cm}
+Prvi slučaj računamo kao : $P_1 = p(A1)p(A2) = 0.69 \cdot 0.23 = 0.1587$
+\\ \vspace{0.15cm} A drugi slučaj : $P_2 = p(B1)p(1 - B2)p(A2) = 0.31 \cdot 0.34 \cdot 0.23 = 0.0242$ \\
+\vspace{0.25cm}
+Pa je \fbox{$P_{(b)}= P_1+P_2 = 0.1587+0.0242 = 0.1829 = 18.29\%$}
+\\ \vspace{0.25cm}
+c) Kako smo pod b) izračunali koja je vjerovatnoća da Aria pobijedi i koja je
+vjerovatnoća da ona pobijedi i da je Bolero predao prvi. Da dobijemo uslovnu
+vjerovatnoću samo treba podijeliti $P_2$(iz b)) i $P_{(b)}$ \\ \vspace{0.25cm}
+\fbox{$P_{(c)}= \frac{P_2}{P_{(b)}} = \frac{0.0242}{0.1829} = 0.1323 = 13.23\%$}
+\\ \vspace{0.25cm}
+
+d) Sada izračunajmo vjerovatnoću da je Aria predala prva i pobijedila, i vjerovatnoću da je Bolero predao prvi i pobijedio. Za Ariu smo već izračunali pod b) (odnosno $P_1$)
+, a za Bolera ćemo slično izračunati $P_3$
+\\ \vspace{0.25cm}
+$P_3 = p(B1)p(B2) = 0.31 \cdot 0.66 = 0.2046 = 20.46\%$ \\
+\vspace{0.25cm}
+Iz ovoga slijedi da je vjerovatnoća da je prvi predati jingl pobjednički jednaka : \\ \vspace{0.25cm}
+\fbox{$P_{(d)}=P_1 + P_3 = 0.1587 + 0.2046 = 0.3633 = 36.33\%$}
+		}
+		\end{center}
+		
+		
+		
+				\item Prije nego ode na posao, Viktor provjeri vremensku prognozu, kako bi odlučio da li da nosi kišobran ili ne. Ako prognoza kaže da će padati kiša, vjerovatnoća da će ona zaista padati iznosi 74\%. Ako prognoza kaže da kiše neće biti, vjerovatnoća da će ona ipak padati iznosi 5\%. Za vrijeme jeseni i zime, vjerovatnoća pojave prognoze kiše iznosi 70\%, a za vrijeme ljeta i proljeća pojava prognoze kiše iznosi 20\%. \\
+				a)Jedan dan Viktor nije pogledao vremensku prognozu i kiša je padala. Koja je vjerovatnoća da je prognozirana kiša ako se ovo desilo za vrijeme zime? Koja je vjerovatnoća da je prognozirana kiša ako se ovo desilo za vrijeme ljeta?\\
+				b)Vjerovatnoća da će Viktor propustiti prognozu iznosi 0.17 bilo koji dan u godini. U slučaju da propusti prognozu on baca pravedni novčić da odluči hoće li nositi kišobran ili ne. Ako prognoza kaže da će padati kiša, on će sigurno ponijeti kišobran, a ako prognoza kaže da neće biti kiše, on neće ponijeti kišobran. Primijećen je Viktor kako nosi kišobran, ali kiša ne pada. Koja je vjerovatnoća da je vidio vremensku prognozu?
+				
+		\begin{center}
+		\textit{
+		4 su disjunktna događaja\\
+KP - Kiša pada ako prognoza tako kaže\\
+KN - Kiša pada ako prognoza ne kaže\\
+PL - Pojava prognoze da će kiša padati ljeti i u proljeće\\
+PZ - Pojava prognoze da će kiša padati zimi i u jesen\\
+\vspace{0.25cm}
+Vjerovatnoće su redom : \\ \vspace{0.15cm}
+p(KP) = 0.74\\
+p(KN) = 0.05\\
+p(PL) = 0.2\\
+p(PZ) = 0.7\\
+\vspace{0.25cm}
+a) Uslov je da je kiša padala. Sada izračunajmo vjerovatnoću da je kiša
+padala tokom zime. Imamo dva slučaja kada kiša pada, a to je da je prognozirana i da je padala i da nije prognozirana i da je padala. Vjerovatnoća da
+je kiša prognozirana i da je padala iznosi : \\ \vspace{0.15cm}
+p1 = p(KP)p(PZ) = 0.74 · 0.7 = 0.518 = 51.8\%
+\\ \vspace{0.25cm}
+Vjerovatnoća da je padala, a nije prognozirana je\\ \vspace{0.15cm}
+p2 = p(KN)(1 – p(PZ)) = 0.05 ·(1 – 0.7) = 0.05 · 0.3 = 0.015 = 1.5\%
+\\ \vspace{0.25cm} Pa vjerovatnoća da kiša pada zimi iznosi : 
+\\ \vspace{0.15cm}
+$P_z = p1 + p2 = 0.518 + 0.015 = 0.533 = 53.3\%$
+\\ \vspace{0.15cm} Sada vjerovatnoća da je kiša prognozirana a da je padala se računa kao : \\
+$\frac{p1}{P_z} = \frac{0.518}{0.533} \approx 0.972 \approx 97.2\%$
+\\ \vspace{0.25cm}
+Izračunajmo vjerovatnoću da je kiša padala tokom ljeta.Opet imamo
+dva slučaja kada kiša pada, a to je da je prognozirana i da je padala i da nije
+prognozirana i da je padala.\\ \vspace{0.15cm} Vjerovatnoća da je i prognozirana i padala je : \\ \vspace{0.15cm}
+p3 = p(KP)p(PL) = 0.74 · 0.2 = 0.1480 = 14.80\%
+\\ \vspace{0.25cm}
+Vjerovatnoća da je padala, a nije prognozirana iznosi :
+\\ \vspace{0.15cm}
+p4 = p(KN)(1 – p(PL)) = 0.05 ·(1 – 0.2) = 0.05 · 0.8 = 0.04 = 4.0\%
+\\ \vspace{0.25cm}
+Sada vjerovatnoća da kiša pada ljeti je : \\ \vspace{0.15cm}
+$ P_L= p3 + p4 = 0.1480 + 0.04 = 0.188 = 18.8\%$
+\\ \vspace{0.25cm}
+a vjerocatnoća da je kiša prognozirana, a padala je lahko se računa kao
+\\ \vspace{0.25cm}
+$\frac{p3}{P_L} = \frac{0.1480}{0.188} \approx 0.787 \approx 78.7\%$
+\\ \vspace{0.25cm}
+b) b) Prvo izračunajmo vjerovatnoću da Viktor nije pogledao prognozu i da
+je ponio kišobran, a da kiša ne pada. Vjerovatnoću da kiša ne pada zimi ćemo
+izračunati kao komplementarni događaj od događaja kiša pada što smo već izračunali pod a) i iznosi
+1-0.533=0.467, a ljeti analogno izračunamo 1-0.188=0.812. Sada pošto je
+vjerovatnoća da je ljeto ili proljeće jednaka vjerovatnoći da je zima ili jesen
+odnosno 50\% = 0.5. Pošto su ovo disjunktni događaji lahko dobijemo
+vjerovatnoću da kiša neće padati u bilo kojem danu u godini kao
+\\ \vspace{0.25cm}
+0.467 · 0.5 + 0.812 · 0.5 = 0.6395 = 63.95\%
+\\ \vspace{0.25cm}
+ imamo vjerovatnoću da Viktor nije pogledao prognozu 0.17 i da
+je odlučio ponijeti kišobran 0.5, jer baca pravedni novčić, kao i vjerovatnoću da kiša ne pada 0.6395, pa ćemo ovu vjerovatnoću lahko izračunati kao proizvod svih ovih vjerovatnoća. \\ \vspace{0.15cm}
+odnosno : $0.17 \cdot 0.5 \cdot 0.6395 \approx 0.054 \approx 5.4\% $
+\\ \vspace{0.25cm}
+Sada moramo izračunati vjerovatnoću da je pogledao prognozu i da je
+prognoza pogriješila, odnosno da je prognoza rekla da će kiša padati, a kiša nije
+padala. Tu vjerovatnoću izračunajmo za ljeto.
+\\ \vspace{0.25cm}
+ (1 - p(KP))$P_L = 0.26 \cdot 0.188 \approx 0.048 \approx 4.8\%$
+ \\ \vspace{0.25cm}
+ Analogno za zimu : \\
+ (1 - p(KP))$P_z = 0.26 \cdot 0.533 \approx 0.138 \approx 13.8\%$
+ \\ \vspace{0.25cm}
+ Vjerovatnoća da je prognoza rekla da će kiša padati, a nije padala iznosi :
+ \\ \vspace{0.15cm}
+ 0.048 · 0.5 + 0.138 · 0.5 = 0.093 = 9.3\%
+ \\ \vspace{0.25cm}
+  Vjerovatnoća da je Viktor pogledao prognozu i da je prognoza pogriješila je
+  \\ \vspace{0.15cm}
+  (1 – 0.17) · 0.093 = 0.07719 = 7.719\%
+  \\ \vspace{0.25cm}
+  Ukupnu vjerovatnoću da je Viktor ponio kišobran, a kiša nije padala
+dobijamo tako što saberemo ove dvije dobijene vrijednosti
+\\ \vspace{0.25cm}
+ \fbox{$P = 0.07719 + 0.054 \approx 0.1312 \approx 13.12\% $}
+ \\ \vspace{0.25cm}
+ Još ostaje da podijelimo vjerovatnoću da je pogledao prognozu sa ovom vjerovatnoćom, tako dobijamo konačno rješenje 
+ \\ \vspace{0.25cm}
+  \fbox{$P_b = \frac{0.07719}{0.1312} \approx 58.83\%$}
+
+		}
+		\end{center}
+		
+	\end{enumerate}
+	
+	
+	
+    \end{document}

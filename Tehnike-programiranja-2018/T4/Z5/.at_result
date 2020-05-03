@@ -1,0 +1,175 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3274": {
+            "status": 1,
+            "run_result": {
+                "output": "7 6 4 5 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3275": {
+            "status": 1,
+            "run_result": {
+                "output": "x",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3276": {
+            "status": 1,
+            "run_result": {
+                "output": "1 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3277": {
+            "status": 1,
+            "run_result": {
+                "output": "x",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3278": {
+            "status": 1,
+            "run_result": {
+                "output": "1.2 5.6 7.8 9.123 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3279": {
+            "status": 1,
+            "run_result": {
+                "output": "x",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3280": {
+            "status": 1,
+            "run_result": {
+                "output": "abc abcd ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3281": {
+            "status": 1,
+            "run_result": {
+                "output": "x",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3282": {
+            "status": 1,
+            "run_result": {
+                "output": "arf abd abc abcd ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3283": {
+            "status": 1,
+            "run_result": {
+                "output": "abc d ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3300": {
+            "status": 1,
+            "run_result": {
+                "output": "Test za realne brojeve...\nUnesite broj elemenata prvog vektora: Unesite elemente prvog vektora: Unesite broj elemenata drugog vektora: Unesite elemente drugog vektora: Zajednicki elementi su: 7 6 4 5 \n\nTest za stringove...\nUnesite broj elemenata prvog vektora: Unesite elemente prvog vektora (ENTER nakon svakog unosa): Unesite broj elemenata drugog vektora: Unesite elemente drugog vektora (ENTER nakon svakog unosa): Zajednicki elementi su:\nasd www xy\nstrstr kvekk\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1554149679
+}

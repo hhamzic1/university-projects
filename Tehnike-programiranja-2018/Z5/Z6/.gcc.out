@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/TP/Z5/Z6/main.cpp: In constructor ‘DatotecniKontejner<TipElementa>::DatotecniKontejner(const string&)’:
+/rhome/h/hhamzic1/workspace/TP/Z5/Z6/main.cpp:14:78: error: no match for call to ‘(std::fstream {aka std::basic_fstream<char>}) (const string&, std::_Ios_Openmode)’
+             tok(ime_datoteke, std::ios::in | std::ios::out | std::ios::binary);
+                                                                              ^

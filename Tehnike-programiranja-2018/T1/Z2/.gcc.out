@@ -1,0 +1,28 @@
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp: In function ‘int main()’:
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:15:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(max==a)
+             ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:24:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(max==b)
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:32:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(max==c)
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:50:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(max==a)
+             ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:55:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(max==b)
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:60:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(max==c)
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:67:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(min==a)
+             ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:80:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(min==b)
+                  ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z2/main.cpp:92:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(min==c)
+                  ^

@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/OR/Z2/Z1/main.c: In function ‘main’:
+/rhome/h/hhamzic1/workspace/OR/Z2/Z1/main.c:37:22: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+      if((j==(n/2)+1) && (i==(n/2)+1) || (i==2 && j==n-2) || (i==1 && j==0))
+         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~

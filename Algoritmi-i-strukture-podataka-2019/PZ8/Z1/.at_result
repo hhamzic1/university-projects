@@ -1,0 +1,153 @@
+{
+    "buildhost_description": {
+        "id": "lab002c02",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::nadjiCvor(const TipKljuca&, BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) const [with TipKljuca = int; TipVrijednosti = int]’:\nmain.cpp:58:3: warning: control reaches end of non-void function [-Wreturn-type]\n   }\n   ^\nmain.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::NadjiMax(BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) [with TipKljuca = int; TipVrijednosti = int]’:\nmain.cpp:64:3: warning: control reaches end of non-void function [-Wreturn-type]\n   }\n   ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "58",
+                "col": "3",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_6877/main.cpp:58:3: warning: control reaches end of non-void function [-Wreturn-type]   }   ^/tmp/buildservice/bs_6877/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::NadjiMax(BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) [with TipKljuca = int; TipVrijednosti = int]’:",
+                "code": "}"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "64",
+                "col": "3",
+                "message": "control reaches end of non-void function",
+                "output": "/tmp/buildservice/bs_6877/main.cpp:64:3: warning: control reaches end of non-void function [-Wreturn-type]   }   ^",
+                "code": "}"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1722": {
+            "status": 1,
+            "run_result": {
+                "output": "2 Hrvatska '' '' 3 '' 0 '' ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1723": {
+            "status": 1,
+            "run_result": {
+                "output": "2 2 2 BiH 2 BiH 1 '' 0 ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1724": {
+            "status": 1,
+            "run_result": {
+                "output": "3 Sarajevo Tuzla 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1725": {
+            "status": 1,
+            "run_result": {
+                "output": "2 300 0 2 400 3",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1726": {
+            "status": 1,
+            "run_result": {
+                "output": "10000",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1727": {
+            "status": 1,
+            "run_result": {
+                "output": "200 2 1 0 0 0 300",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1728": {
+            "status": 1,
+            "run_result": {
+                "output": "4.5 7 0 5 8 0 2 1.5 1 0.5 0 8 1.5 3 0 8 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1729": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 2,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1576795836
+}

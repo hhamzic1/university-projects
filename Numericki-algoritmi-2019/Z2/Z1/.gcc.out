@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/NA/Z2/Z1/main.cpp: In member function ‘void Matrix::ReduceToRREF()’:
+/rhome/h/hhamzic1/workspace/NA/Z2/Z1/main.cpp:1030:32: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+      if(i==j && (*this)[i][j]!=0) r++;
+                                ^

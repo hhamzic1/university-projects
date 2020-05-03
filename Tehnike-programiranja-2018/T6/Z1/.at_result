@@ -1,0 +1,217 @@
+{
+    "buildhost_description": {
+        "id": "lab002c05",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3380": {
+            "status": 1,
+            "run_result": {
+                "output": "Koliko zelite elemenata: Izuzetak: Broj elemenata mora biti pozitivan",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3383": {
+            "status": 1,
+            "run_result": {
+                "output": "Koliko zelite elemenata: Izuzetak: Broj elemenata mora biti pozitivan",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3384": {
+            "status": 1,
+            "run_result": {
+                "output": "Koliko zelite elemenata: Izuzetak: Prekoracen dozvoljeni opseg",
+                "duration": 7,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3385": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 8 16 32 64 128 256 512 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3386": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 8 16 32 64 128 256 512 1024 2048 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3387": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 8 16 32 64 128 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3388": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Prekoracen dozvoljeni opseg",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3389": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 ",
+                "duration": 2,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3390": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Prekoracen dozvoljeni opseg",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3391": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3392": {
+            "status": 1,
+            "run_result": {
+                "output": "Koliko zelite elemenata: 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 536870912 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3393": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Prekoracen dozvoljeni opseg",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3415": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Broj elemenata mora biti pozitivan",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3416": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Broj elemenata mora biti pozitivan",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1555266113
+}

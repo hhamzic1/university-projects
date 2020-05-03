@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/TP/T13/Z3/main.cpp: In lambda function:
+/rhome/h/hhamzic1/workspace/TP/T13/Z3/main.cpp:139:41: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(s1->DajProsjek()==s2->DajProsjek())
+                                         ^

@@ -1,0 +1,10 @@
+/rhome/h/hhamzic1/workspace/TP/T2/Z3/main.cpp: In function ‘int main()’:
+/rhome/h/hhamzic1/workspace/TP/T2/Z3/main.cpp:11:16: error: ‘endl’ was not declared in this scope
+     std::cout<<endl;
+                ^~~~
+/rhome/h/hhamzic1/workspace/TP/T2/Z3/main.cpp:11:16: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from /rhome/h/hhamzic1/workspace/TP/T2/Z3/main.cpp:2:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~

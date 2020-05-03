@@ -1,0 +1,4 @@
+/rhome/h/hhamzic1/workspace/NA/Z4/Z2/main.cpp: In lambda function:
+/rhome/h/hhamzic1/workspace/NA/Z4/Z2/main.cpp:122:35: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  auto f = [](double x) {return x==0 ? 0:1/std::sqrt(x);};
+                                   ^

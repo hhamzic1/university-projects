@@ -1,0 +1,10 @@
+
+Ksquid:S1185
+"(Remove this method to simply inherit it.(¬èŸüÿÿÿÿ8ä÷ƒ—â-
+Fsquid:S1185"(Remove this method to simply inherit it.(Éèà—8ğ³ƒ—â-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(Éèà—8ÄÿÆâ-
+qsquid:S3776"SRefactor this method to reduce its Cognitive Complexity from 179 to the 15 allowed.(Å•È³8ª¾¹¢â-
+]squid:S1161
+":Add the "@Override" annotation above this method signature(¬èŸüÿÿÿÿ8ÄÿÆâ-
+Lsquid:S1481‹"(Remove this unused "jot" local variable.(öƒ³ùÿÿÿÿ8üÆ‚ˆã-
+[squid:S1854‹"7Remove this useless assignment to local variable "jot".(öƒ³ùÿÿÿÿ8¸İ‚ˆã-

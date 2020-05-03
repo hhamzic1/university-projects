@@ -1,0 +1,15 @@
+==12401== Memcheck, a memory error detector
+==12401== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12401== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==12401== Command: /rhome/h/hhamzic1/workspace/TP/T3/Z5/.runme
+==12401== Parent PID: 12372
+==12401== 
+==12401== 
+==12401== HEAP SUMMARY:
+==12401==     in use at exit: 0 bytes in 0 blocks
+==12401==   total heap usage: 18 allocs, 18 frees, 78,784 bytes allocated
+==12401== 
+==12401== All heap blocks were freed -- no leaks are possible
+==12401== 
+==12401== For counts of detected and suppressed errors, rerun with: -v
+==12401== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="440.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+<GridPane fx:id="lblPrezime" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@/css/korisnici.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="200" minWidth="200" />
+      <ColumnConstraints maxWidth="100" minWidth="100" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="128.0" minHeight="128.0" prefHeight="128.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="lblIme" text="%kor.ime" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="fldIme" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="lblPrezz" text="%kor.prezime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="fldPrezime" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label fx:id="lblemail" text="%kor.email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="fldEmail" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label fx:id="lblusername" text="%kor.username" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="fldUsername" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="lblpass" text="%kor.password" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <PasswordField fx:id="fldPassword" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="7">
+        <buttons>
+            <Button fx:id="btnObrisi" mnemonicParsing="false" onAction="#obrisiAction" text="%kor.obrisi" />
+            <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#dodajAction" text="%kor.dodaj" />
+            <Button fx:id="btnKraj" cancelButton="true" mnemonicParsing="false" onAction="#krajAction" text="%kor.kraj" />
+        </buttons>
+      </ButtonBar>
+            <ListView fx:id="listKorisnici" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="7" />
+            <Button fx:id="imgKorisnik" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAvatarAction" prefHeight="128.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" />
+   </padding>
+</GridPane>
+    </center>
+   <top>
+<MenuBar BorderPane.alignment="CENTER">
+  <menus>
+    <Menu mnemonicParsing="false" text="%kor.file">
+      <items>
+        <MenuItem fx:id="menuSave" mnemonicParsing="false" text="%kor.save" />
+            <MenuItem fx:id="printMenu" mnemonicParsing="false" text="%kor.print" />
+            <Menu fx:id="menuLanguage" mnemonicParsing="false" text="%kor.language">
+              <items>
+                  <MenuItem fx:id="menuEnglish" mnemonicParsing="false" text="%kor.english" />
+                  <MenuItem fx:id="menuBosnian" mnemonicParsing="false" text="%kor.bosanski" />
+              </items>
+            </Menu>
+            <MenuItem fx:id="menuExit" mnemonicParsing="false" text="%kor.exit" />
+      </items>
+    </Menu>
+    <Menu fx:id="menuHelp" mnemonicParsing="false" text="%kor.help">
+      <items>
+        <MenuItem fx:id="menuAbout" mnemonicParsing="false" text="%kor.about" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
+   </top>
+</BorderPane>

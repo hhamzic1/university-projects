@@ -1,0 +1,253 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘int main()’:\nmain.cpp:15:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(max==a)\n             ^\nmain.cpp:24:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(max==b)\n                  ^\nmain.cpp:32:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(max==c)\n                  ^\nmain.cpp:50:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(max==a)\n             ^\nmain.cpp:55:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(max==b)\n                  ^\nmain.cpp:60:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(max==c)\n                  ^\nmain.cpp:67:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(min==a)\n             ^\nmain.cpp:80:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(min==b)\n                  ^\nmain.cpp:92:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(min==c)\n                  ^\nmain.cpp:67:5: warning: ‘min’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n     if(min==a)\n     ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "15",
+                "col": "13",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:15:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(max==a)             ^",
+                "code": "if(max==a)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "24",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:24:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(max==b)                  ^",
+                "code": "else if(max==b)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "32",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:32:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(max==c)                  ^",
+                "code": "else if(max==c)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "50",
+                "col": "13",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:50:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(max==a)             ^",
+                "code": "if(max==a)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "55",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:55:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(max==b)                  ^",
+                "code": "else if(max==b)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "60",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:60:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(max==c)                  ^",
+                "code": "else if(max==c)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "67",
+                "col": "13",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:67:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(min==a)             ^",
+                "code": "if(min==a)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "80",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:80:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(min==b)                  ^",
+                "code": "else if(min==b)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "92",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:92:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(min==c)                  ^",
+                "code": "else if(min==c)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "67",
+                "col": "5",
+                "message": "'min' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_9014/main.cpp:67:5: warning: ‘min’ may be used uninitialized in this function [-Wmaybe-uninitialized]     if(min==a)     ^~",
+                "code": "if(min==a)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3125": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 7, 5 i 8 iznosi 20.\nNjegova povrsina iznosi 17.3205.\nNjegov najmanji ugao ima 38 stepeni, 12 minuta i 47 sekundi.",
+                "duration": 1,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3126": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 7.7, 8.4 i 5.1 iznosi 21.2.\nNjegova povrsina iznosi 19.2861.\nNjegov najmanji ugao ima 36 stepeni, 36 minuta i 33 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3127": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Ne postoji trougao cije su duzine stranica 5, 15 i 7!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3128": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Ne postoji trougao cije su duzine stranica 7, 5 i -8!Unesite tri broja: Ne postoji trougao cije su duzine stranica 7, 8 i 0!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3129": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 0.5, 0.7 i 0.3 iznosi 1.5.\nNjegova povrsina iznosi 0.0649519.\nNjegov najmanji ugao ima 21 stepeni, 47 minuta i 12 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3130": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 7, 7 i 7 iznosi 21.\nNjegova povrsina iznosi 21.2176.\nNjegov najmanji ugao ima 60 stepeni, 0 minuta i 0 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3131": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 3, 4 i 5 iznosi 12.\nNjegova povrsina iznosi 6.\nNjegov najmanji ugao ima 36 stepeni, 52 minuta i 11 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3132": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 7, 7 i 9.89949 iznosi 23.8995.\nNjegova povrsina iznosi 24.5.\nNjegov najmanji ugao ima 45 stepeni, 0 minuta i 0 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3138": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Ne postoji trougao cije su duzine stranica 1, 2 i 3!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3139": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri broja: Obim trougla sa duzinama stranica 123, 321 i 222 iznosi 666.\nNjegova povrsina iznosi 9651.26.\nNjegov najmanji ugao ima 15 stepeni, 42 minuta i 57 sekundi.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1552254914
+}

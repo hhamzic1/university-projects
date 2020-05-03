@@ -1,0 +1,19 @@
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c: In function ‘main’:
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:18:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(nasum==0)
+            ^~
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:23:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    else if(nasum!=0)
+                 ^~
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:30:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(nasum==0)
+            ^~
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:35:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    else if(nasum!=0)
+                 ^~
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:43:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(nasum==0)
+             ^~
+/rhome/h/hhamzic1/workspace/OR/Z1/Z3/main.c:48:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(nasum!=0)
+                  ^~

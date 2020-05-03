@@ -1,0 +1,21 @@
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp: In instantiation of ‘AVLStabloMapa<TipKljuca, TipVrijednosti>::node::node(const TipKljuca&, const TipVrijednosti&, int) [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:138:8:   required from ‘AVLStabloMapa<TipKljuca, TipVrijednosti>& AVLStabloMapa<TipKljuca, TipVrijednosti>::insert(const TipKljuca&) [with TipKljuca = int; TipVrijednosti = int]’
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:281:29:   required from ‘TipVrijednosti& AVLStabloMapa<TipKljuca, TipVrijednosti>::operator[](TipKljuca) [with TipKljuca = int; TipVrijednosti = int]’
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:561:25:   required from here
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:38:11: warning: ‘AVLStabloMapa<int, int>::node::right’ will be initialized after [-Wreorder]
+     node* right;
+           ^~~~~
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:35:43: warning:   ‘int AVLStabloMapa<int, int>::node::value’ [-Wreorder]
+     TipVrijednosti value = TipVrijednosti();
+                                           ^
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:39:5: warning:   when initialized here [-Wreorder]
+     node(const TipKljuca& d, const TipVrijednosti& t, int b=0):
+     ^~~~
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::nadjiCvor(const TipKljuca&, BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) const [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:413:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::NadjiMax(BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/Z4/Z1/main.cpp:419:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^

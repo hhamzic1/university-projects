@@ -1,0 +1,27 @@
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c: In function ‘main’:
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:29:15: error: expected expression before ‘)’ token
+    while(broj>)
+               ^
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:29:4: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+    while(broj>)
+    ^~~~~
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:35:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+     broj=abs(broj)/10;
+     ^~~~
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:35:5: error: expected ‘while’ before ‘broj’
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c: At top level:
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:63:11: error: expected declaration specifiers or ‘...’ before string constant
+    printf("\nNakon preslaganja niz glasi:\n");
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:65:2: error: expected identifier or ‘(’ before ‘for’
+  for(i=0; i<brojac; i++)
+  ^~~
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:65:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+  for(i=0; i<brojac; i++)
+            ^
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:65:22: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+  for(i=0; i<brojac; i++)
+                      ^~
+/rhome/h/hhamzic1/workspace/OR/Z2/Z2/main.c:81:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^

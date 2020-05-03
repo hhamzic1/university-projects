@@ -1,0 +1,18 @@
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp: In function ‘int main()’:
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp:333:25: error: ‘BinStabloMapa<int, int>::Cvor* BinStabloMapa<int, int>::root’ is private within this context
+       NadjiMax(treeMapa.root);
+                         ^~~~
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp:37:9: note: declared private here
+   Cvor* root;
+         ^~~~
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp:333:7: error: ‘NadjiMax’ was not declared in this scope
+       NadjiMax(treeMapa.root);
+       ^~~~~~~~
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::nadjiCvor(const TipKljuca&, BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) const [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp:58:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::NadjiMax(BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/PZ8/Z1/main.cpp:64:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^

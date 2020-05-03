@@ -1,0 +1,319 @@
+{
+    "id": 5535,
+    "name": "Tehnike programiranja (2017\/2018), Zada\u0107a 6, zadatak 4",
+    "language": "C++",
+    "preferred_compiler": "g++",
+    "required_compiler": "g++",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-std=c++11 -O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-std=c++11 -ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 47,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "          \/\/AT1 (c9) - Testiranje konstruktora\n  DatotecniKontejner<int> dk1(\"ime1.DAT\");\n        DatotecniKontejner<int> dk2(\"ime1.DAT\");\n        DatotecniKontejner<int> dk3(\"ime2.DAT\");\n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 48,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "        \/\/AT2 (c9) - Testiranje konstruktora\n        DatotecniKontejner<double> dk1(\"ime3.DAT\");\n        DatotecniKontejner<double> dk2(\"ime3.DAT\");\n        DatotecniKontejner<double> dk3(\"ime4.DAT\");\n        \n        dk1.DodajNoviElement(1.28);\n        \n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<\" \"<<dk3.DajBrojElemenata()<<std::endl;",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 0\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 49,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "        \/\/AT3 (c9) - Testiranje konstruktora\n        DatotecniKontejner<int> dk1(\"ime5.DAT\");\n        DatotecniKontejner<int> dk2(\"ime5.DAT\");\n        DatotecniKontejner<int> dk3(\"ime6.DAT\");\n        \n        dk1.DodajNoviElement(1);\n                \n        dk2.DodajNoviElement(1);\n        \n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<\" \"<<dk3.DajBrojElemenata()<<std::endl;",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 2 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 50,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": " \/\/AT4 (c9) - Testiranje metode DodajNoviElement\n        DatotecniKontejner<int> dk1(\"ime7.DAT\");\n        DatotecniKontejner<int> dk2(\"ime7.DAT\");\n        \n        dk1.DodajNoviElement(6);\n        dk2.DodajNoviElement(1);\n        dk2.DodajNoviElement(3);\n        dk2.DodajNoviElement(6);\n        \n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "4 4\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 51,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "          \/\/AT5 (c9) - Testiranje metode IzmijeniElement\n DatotecniKontejner<double> dk2(\"ime8.DAT\");\n        DatotecniKontejner<double> dk1(\"ime8.DAT\");\n\n        dk1.DodajNoviElement(6.7);\n        dk1.DodajNoviElement(1.7);\n        dk1.DodajNoviElement(3.6);\n        dk1.DodajNoviElement(6.2);\n        \n\n        std::cout<<dk1.DajElement(2)<<std::endl;\n        \n        dk1.IzmijeniElement(2,13.3);\n        \n        std::cout<<dk1.DajElement(2)<<std::endl;\n\n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "3.6\\n13.3\\n4 4"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 52,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT6 (c9) - Testiranje metode IzmijeniElement - Izuzetak\n\n        DatotecniKontejner<double> dk2(\"ime10.DAT\");\n        DatotecniKontejner<double> dk1(\"ime10.DAT\");\n        \n        dk1.DodajNoviElement(6.7);\n        dk1.DodajNoviElement(1.7);\n        dk1.DodajNoviElement(3.6);\n        dk1.DodajNoviElement(6.2);\n        try{\n\n        std::cout<<dk1.DajElement(2)<<std::endl;\n        \n        dk1.IzmijeniElement(4,13.3);\n        \n        std::cout<<dk2.DajElement(4)<<std::endl;\n\n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;\n        }\n        catch(std::range_error e) {\n            std::cout<<e.what()<<std::endl;\n        }\n                  \/\/Neispravna pozicija",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "3.6\\nNeispravna pozicija\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 53,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT7 (zamger) - Testiranje metode DajElement - Izuzetak\n\n        DatotecniKontejner<double> dk2(\"ime12.DAT\");\n        DatotecniKontejner<double> dk1(\"ime12.DAT\");\n        \n        dk1.DodajNoviElement(6.7);\n        dk1.DodajNoviElement(1.7);\n        dk1.DodajNoviElement(3.6);\n        dk1.DodajNoviElement(6.2);\n        try{\n\n        std::cout<<dk1.DajElement(4)<<std::endl;\n        \n        dk1.IzmijeniElement(4,13.3);\n        \n        std::cout<<dk2.DajElement(4)<<std::endl;\n\n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;\n        }\n        catch(std::range_error e) {\n            std::cout<<e.what()<<std::endl;\n        }\n        \n        \/\/Neispravna pozicija",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Neispravna pozicija\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 54,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT8 (zamger) - Testiranje metode DajElement - Izuzetak\n\n        DatotecniKontejner<double> dk1(\"ime13.DAT\");\n        DatotecniKontejner<double> dk2(\"ime13.DAT\");\n        \n        dk1.DodajNoviElement(6.7);\n        dk2.DodajNoviElement(1.7);\n        dk2.DodajNoviElement(3.6);\n        dk2.DodajNoviElement(6.2);\n        try{\n\n        std::cout<<dk1.DajElement(-2)<<std::endl;\n        \n        dk1.IzmijeniElement(4,13.3);\n        \n        std::cout<<dk2.DajElement(4)<<std::endl;\n\n        std::cout<<dk1.DajBrojElemenata()<<\" \"<<dk2.DajBrojElemenata()<<std::endl;\n        }\n        catch(std::range_error e) {\n            std::cout<<e.what()<<std::endl;\n        }\n               \/\/Neispravna pozicija",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Neispravna pozicija\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 55,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT9 (zamger) - Testiranje metode sortiraj\n\n        DatotecniKontejner<double> dk1(\"ime14.DAT\");\n        std::vector<double> v{2.8,1.2,3,4,5.6};\n        for(int i=0 ; i < v.size(); i++)\n            dk1.DodajNoviElement(v[i]);\n        std::cout<<\"Sortiran niz: \";\n        dk1.Sortiraj();\n        for(int i=0 ; i < v.size(); i++)\n            std::cout<<dk1.DajElement(i)<<\" \";\n",
+            "global_above_main": "#include <vector>\n",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Sortiran niz: 1.2 2.8 3 4 5.6 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 56,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT10 (zamger) - Testiranje metode sortiraj sa custom funkcijom kriterija\n        DatotecniKontejner<double> dk1(\"ime15.DAT\");\n        std::vector<double> v{-2 , 1, -4, 3, 5, -6};\n        for(int i=0 ; i < v.size(); i++) dk1.DodajNoviElement(v[i]);\n        std::cout<<\"Sortiran niz: \";\n        dk1.Sortiraj([](double a, double b) { return fabs(a) < fabs(b); });\n        for(int i=0 ; i < v.size(); i++)\n            std::cout<<dk1.DajElement(i)<<\" \";\n",
+            "global_above_main": "#include<vector>\n#include <cmath>",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Sortiran niz: 1 -2 3 -4 5 -6"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 57,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "        \n        \/\/AT11 (zamger) - Testiranje metode sortiraj sa custom funkcijom kriterija\n        DatotecniKontejner<char> dk1(\"ime16.DAT\");\n        std::vector<char> v{'d', 'c', 'a', 'b', 'e'};\n        for(int i=0 ; i < v.size(); i++) dk1.DodajNoviElement(v[i]);\n        std::cout<<\"Sortiran niz: \";\n        dk1.Sortiraj([](char a, char b) { return int(a) < int(b); });\n        for(int i=0 ; i < v.size(); i++)\n            std::cout<<dk1.DajElement(i)<<\" \";\n",
+            "global_above_main": "#include<vector>\n",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Sortiran niz: a b c d e"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 58,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "   \/\/AT12 (zamger) - Testiranje metode sortiraj sa custom funkcijom kriterija\n        DatotecniKontejner<short> dk1(\"ime17.DAT\");\n        std::vector<short> v {4, 3, 5, 34, 1, 45, 54, 22, 1, 234, 43, 234, 532, 12, 100, 101};\n\n\n        for(int i=0 ; i < v.size(); i++) dk1.DodajNoviElement(v[i]);\n        auto suma = [](short x) {int s = 0; while (x) s += x % 10, x \/= 10; return s;};\n    auto lambda = [suma](short a, short b) {if (suma(a) == suma(b)) return a < b; return suma (a) < suma (b);};\n        dk1.Sortiraj(lambda);\n        std::cout<<\"Sortiran niz: \";\n        for(int i=0 ; i < v.size(); i++)\n            std::cout<<dk1.DajElement(i)<<\" \";",
+            "global_above_main": "#include <vector>\n",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Sortiran niz: 1 1 100 101 3 12 4 22 5 34 43 45 54 234 234 532 \\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+/rhome/h/hhamzic1/workspace/TP/T1/Z4/main.cpp: In function ‘int main()’:
+/rhome/h/hhamzic1/workspace/TP/T1/Z4/main.cpp:11:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+      if(!(std::cin>>n) || n<0 || n-floor(n)!=0)
+                                              ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z4/main.cpp:18:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+      else if(n==0)
+                 ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z4/main.cpp:23:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+      else if(floor(n)==ceil(n))
+                              ^
+/rhome/h/hhamzic1/workspace/TP/T1/Z4/main.cpp:39:24: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+          else if(suma==n)
+                        ^

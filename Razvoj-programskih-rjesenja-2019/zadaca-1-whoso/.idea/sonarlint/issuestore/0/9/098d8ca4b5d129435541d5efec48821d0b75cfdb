@@ -1,0 +1,9 @@
+
+_squid:UselessImportCheck"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8œÁá¯ã-
+Zsquid:S2589x"7Remove this expression which always evaluates to "true"(óÉŞ½úÿÿÿÿ8ÇéØæ-
+Usquid:S1854l"7Remove this useless assignment to local variable "ima".(Éºı8ÇéØæ-
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(åšÖ§8›ËğÃã-
+]squid:S2259T"?A "NullPointerException" could be thrown; "k" is nullable here.(ã£Õù8»‹÷Øæ-
+Msquid:S001089")Either remove or fill this block of code.(àÓ´ıÿÿÿÿ8ÇéØæ-
+Msquid:S00108_")Either remove or fill this block of code.(ÒÍ¸áıÿÿÿÿ8ÇéØæ-
+Xsquid:S1141W"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÇéØæ-

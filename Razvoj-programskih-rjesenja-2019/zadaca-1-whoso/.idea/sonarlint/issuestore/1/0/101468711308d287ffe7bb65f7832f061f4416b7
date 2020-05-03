@@ -1,0 +1,9 @@
+
+Ssquid:S1066µ"/Merge this if statement with the enclosing one.(ÄßÄ‹ıÿÿÿÿ8ÔŒ±Èâ-
+]squid:S1161	":Add the "@Override" annotation above this method signature(¬èŸüÿÿÿÿ8Ó˜¦›â-
+Fsquid:S1185"(Remove this method to simply inherit it.(Éèà—8Õó…—â-
+nsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(çÁ£ùÿÿÿÿ8è¥óâ-
+qsquid:S3776"SRefactor this method to reduce its Cognitive Complexity from 104 to the 15 allowed.(Å•È³8Ş¢ùâ-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(Éèà—8Ó˜¦›â-
+Rsquid:S1066e"/Merge this if statement with the enclosing one.(äî¿ıÿÿÿÿ8Ø¶œÈâ-
+Ksquid:S1185	"(Remove this method to simply inherit it.(¬èŸüÿÿÿÿ8Õó…—â-

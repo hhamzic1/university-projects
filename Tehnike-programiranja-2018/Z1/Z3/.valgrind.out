@@ -1,0 +1,23 @@
+==21397== Memcheck, a memory error detector
+==21397== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21397== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==21397== Command: /rhome/h/hhamzic1/workspace/TP/Z1/Z3/.runme
+==21397== Parent PID: 21370
+==21397== 
+==21397== 
+==21397== Process terminating with default action of signal 1 (SIGHUP)
+==21397==    at 0x56EF07F: read (read.c:27)
+==21397==    by 0x566C147: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:531)
+==21397==    by 0x566D3F1: _IO_default_uflow (genops.c:380)
+==21397==    by 0x512B95C: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==21397==    by 0x50E8E5C: std::istream::ignore(long, int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==21397==    by 0x1099E3: main (main.cpp:111)
+==21397== 
+==21397== HEAP SUMMARY:
+==21397==     in use at exit: 0 bytes in 0 blocks
+==21397==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==21397== 
+==21397== All heap blocks were freed -- no leaks are possible
+==21397== 
+==21397== For counts of detected and suppressed errors, rerun with: -v
+==21397== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

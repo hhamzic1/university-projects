@@ -1,0 +1,105 @@
+==20607== Memcheck, a memory error detector
+==20607== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20607== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==20607== Command: /rhome/h/hhamzic1/workspace/TP/T12/Z5/.runme
+==20607== Parent PID: 20598
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x109021: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:691)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x10938E: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:557)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x1093B5: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:559)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x10998B: std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const (stl_vector.h:1504)
+==20607==    by 0x109406: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:568)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x109CD9: unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) (stl_algobase.h:224)
+==20607==    by 0x1099CA: std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const (stl_vector.h:1507)
+==20607==    by 0x109406: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:568)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x1099E5: std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const (stl_vector.h:1508)
+==20607==    by 0x109406: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:568)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x1099F7: std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const (stl_vector.h:1508)
+==20607==    by 0x109406: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:568)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x109A3B: std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20607==    by 0x10942D: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:571)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x109FF7: __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) (new_allocator.h:101)
+==20607==    by 0x109D0E: std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) (alloc_traits.h:436)
+==20607==    by 0x109A4F: std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20607==    by 0x10942D: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:571)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x4C3012C: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20607==    by 0x10A00D: __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) (new_allocator.h:111)
+==20607==    by 0x109D0E: std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) (alloc_traits.h:436)
+==20607==    by 0x109A4F: std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20607==    by 0x10942D: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:571)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== Conditional jump or move depends on uninitialised value(s)
+==20607==    at 0x10A28C: __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) (stl_algobase.h:753)
+==20607==    by 0x10A1D9: double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) (stl_algobase.h:789)
+==20607==    by 0x109F8F: double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) (stl_uninitialized.h:548)
+==20607==    by 0x109C96: double* std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long) (stl_uninitialized.h:583)
+==20607==    by 0x109937: double* std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&) (stl_uninitialized.h:645)
+==20607==    by 0x10946E: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:575)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== 
+==20607== Process terminating with default action of signal 1 (SIGHUP)
+==20607==    at 0x10A28E: __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) (stl_algobase.h:754)
+==20607==    by 0x10A1D9: double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) (stl_algobase.h:789)
+==20607==    by 0x109F8F: double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) (stl_uninitialized.h:548)
+==20607==    by 0x109C96: double* std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long) (stl_uninitialized.h:583)
+==20607==    by 0x109937: double* std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&) (stl_uninitialized.h:645)
+==20607==    by 0x10946E: std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) (vector.tcc:575)
+==20607==    by 0x10904A: std::vector<double, std::allocator<double> >::resize(unsigned long) (stl_vector.h:692)
+==20607==    by 0x108DDA: main (main.cpp:18)
+==20607== 
+==20607== HEAP SUMMARY:
+==20607==     in use at exit: 8,682,696 bytes in 1 blocks
+==20607==   total heap usage: 4 allocs, 3 frees, 8,760,520 bytes allocated
+==20607== 
+==20607== LEAK SUMMARY:
+==20607==    definitely lost: 0 bytes in 0 blocks
+==20607==    indirectly lost: 0 bytes in 0 blocks
+==20607==      possibly lost: 0 bytes in 0 blocks
+==20607==    still reachable: 8,682,696 bytes in 1 blocks
+==20607==         suppressed: 0 bytes in 0 blocks
+==20607== Reachable blocks (those to which a pointer was found) are not shown.
+==20607== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==20607== 
+==20607== For counts of detected and suppressed errors, rerun with: -v
+==20607== Use --track-origins=yes to see where uninitialised values come from
+==20607== ERROR SUMMARY: 139315 errors from 11 contexts (suppressed: 0 from 0)

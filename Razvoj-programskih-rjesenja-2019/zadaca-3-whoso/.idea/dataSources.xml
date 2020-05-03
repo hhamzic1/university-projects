@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="korisnici" uuid="6fd51834-55ea-4dff-92e3-3ac7b5228386">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Huso\IdeaProjects\zadaca-3-hhamzic1\korisnici.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

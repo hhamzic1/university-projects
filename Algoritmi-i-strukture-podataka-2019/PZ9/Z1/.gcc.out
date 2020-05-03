@@ -1,0 +1,8 @@
+/rhome/h/hhamzic1/workspace/ASP/PZ9/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::nadjiCvor(const TipKljuca&, BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) const [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/PZ9/Z1/main.cpp:217:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+/rhome/h/hhamzic1/workspace/ASP/PZ9/Z1/main.cpp: In member function ‘BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor* BinStabloMapa<TipKljuca, TipVrijednosti>::NadjiMax(BinStabloMapa<TipKljuca, TipVrijednosti>::Cvor*) [with TipKljuca = int; TipVrijednosti = int]’:
+/rhome/h/hhamzic1/workspace/ASP/PZ9/Z1/main.cpp:223:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^

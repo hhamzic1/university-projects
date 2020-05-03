@@ -1,0 +1,115 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘int main()’:\nmain.cpp:11:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n      if(!(std::cin>>n) || n<0 || n-floor(n)!=0)\n                                              ^\nmain.cpp:18:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n      else if(n==0)\n                 ^\nmain.cpp:23:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n      else if(floor(n)==ceil(n))\n                              ^\nmain.cpp:39:24: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n          else if(suma==n)\n                        ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "11",
+                "col": "46",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_240/main.cpp:11:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]      if(!(std::cin>>n) || n<0 || n-floor(n)!=0)                                              ^",
+                "code": "if(!(std::cin>>n) || n<0 || n-floor(n)!=0)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "18",
+                "col": "17",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_240/main.cpp:18:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]      else if(n==0)                 ^",
+                "code": "else if(n==0)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "23",
+                "col": "30",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_240/main.cpp:23:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]      else if(floor(n)==ceil(n))                              ^",
+                "code": "else if(floor(n)==ceil(n))"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "39",
+                "col": "24",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_240/main.cpp:39:24: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]          else if(suma==n)                        ^",
+                "code": "else if(suma==n)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3136": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prirodan broj ili 0 za kraj: Broj 42 je obilan!\nUnesite prirodan broj ili 0 za kraj: Broj 28 je savrsen!\nUnesite prirodan broj ili 0 za kraj: Broj 49 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Dovidjenja!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3137": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prirodan broj ili 0 za kraj: Broj 6 je savrsen!\nUnesite prirodan broj ili 0 za kraj: Broj 5 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 7 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 8 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Broj 3 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 4 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Dovidjenja!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3140": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prirodan broj ili 0 za kraj: Broj 6 je savrsen!\nUnesite prirodan broj ili 0 za kraj: Broj 228 je obilan!\nUnesite prirodan broj ili 0 za kraj: Broj 28 je savrsen!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Broj 1 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Dovidjenja!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3141": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prirodan broj ili 0 za kraj: Broj 1 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 2 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 3 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 4 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 5 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Broj 6 je savrsen!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Broj 484 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Niste unijeli prirodan broj!\nUnesite prirodan broj ili 0 za kraj: Broj 44 je manjkav!\nUnesite prirodan broj ili 0 za kraj: Dovidjenja!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1552173472
+}

@@ -1,0 +1,12 @@
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp: In member function ‘bool Trougao::kolinearne(Tacka, Tacka, Tacka)’:
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp:14:108: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if((t1.first*(t2.second-t3.second)-t2.first*(t1.second-t3.second)+t3.first*(t1.second-t2.second))==0) return true;
+                                                                                                            ^
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp: In static member function ‘static int Trougao::Orijentacija(const Tacka&, const Tacka&, const Tacka&)’:
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp:73:113: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if((tj1.first*(tj2.second-tj3.second)-tj2.first*(tj1.second-tj3.second)+tj3.first*(tj1.second-tj2.second))==0) return 0;
+                                                                                                                 ^
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp: In member function ‘void Trougao::Skaliraj(const Tacka&, double)’:
+/rhome/h/hhamzic1/workspace/TP/Z4/Z1/main.cpp:141:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(faktor==0) throw std::domain_error("Nekorektan faktor skaliranja");
+                ^

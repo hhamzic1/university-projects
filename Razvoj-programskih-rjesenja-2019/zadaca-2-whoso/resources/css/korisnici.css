@@ -1,0 +1,27 @@
+.poljeIspravno {
+   -fx-control-inner-background: greenyellow;
+}
+.poljeNijeIspravno {
+   -fx-control-inner-background: lightpink;
+}
+
+.btnDodajSlika {
+   -fx-padding: 5px;
+   -fx-background-image: url("/slike/list-add.png");
+   -fx-background-repeat: no-repeat;
+   -fx-background-position: 95%
+}
+
+.btnObrisiSlika {
+   -fx-padding: 5px;
+   -fx-background-image: url("/slike/edit-delete.png");
+   -fx-background-repeat: no-repeat;
+   -fx-background-position: 95%;
+}
+
+.btnKrajSlika {
+   -fx-padding: 5px;
+   -fx-background-image: url("/slike/application-exit.png");
+   -fx-background-repeat: no-repeat;
+   -fx-background-position: 95%;
+}

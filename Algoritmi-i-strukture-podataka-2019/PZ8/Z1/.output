@@ -1,0 +1,4 @@
+Za dodavanje 3000 elemenata u BinStabloMapu, bilo je potrebno 9 ms.
+Za dodavanje 3000 elemenata u NizMapu, bilo je potrebno 16 ms.
+Za pristup elementima BinStabloMape bilo je potrebno 5 ms.
+Za pristup elementima NizMape bilo je potrebno 14 ms.

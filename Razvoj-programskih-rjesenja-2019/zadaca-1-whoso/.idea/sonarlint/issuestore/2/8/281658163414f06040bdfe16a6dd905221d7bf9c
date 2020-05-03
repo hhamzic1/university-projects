@@ -1,0 +1,8 @@
+
+Fsquid:S1185"(Remove this method to simply inherit it.(Éèà—8ÏŸ…—â-
+Xsquid:S1161":Add the "@Override" annotation above this method signature(Éèà—8Ëğ­Çâ-
+Ksquid:S1185
+"(Remove this method to simply inherit it.(¬èŸüÿÿÿÿ8ÏŸ…—â-
+]squid:S1161
+":Add the "@Override" annotation above this method signature(¬èŸüÿÿÿÿ8Ëğ­Çâ-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 91 to the 15 allowed.(Å•È³8œ¸ıÅâ-

@@ -1,0 +1,9 @@
+/rhome/h/hhamzic1/workspace/TP/Z3/Z3/main.cpp: In function ‘Matrica<TipElemenata> MatricniPolinom(Matrica<TipElemenata>, std::vector<double>)’:
+/rhome/h/hhamzic1/workspace/TP/Z3/Z3/main.cpp:185:24: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(veka.at(i)!=0)
+                        ^
+/rhome/h/hhamzic1/workspace/TP/Z3/Z3/main.cpp: In instantiation of ‘Matrica<TipElemenata> MatricniPolinom(Matrica<TipElemenata>, std::vector<double>) [with TipElemenata = double]’:
+/rhome/h/hhamzic1/workspace/TP/Z3/Z3/main.cpp:228:31:   required from here
+/rhome/h/hhamzic1/workspace/TP/Z3/Z3/main.cpp:185:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(veka.at(i)!=0)
+            ~~~~~~~~~~^~~

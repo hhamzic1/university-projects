@@ -1,0 +1,62 @@
+
+Hsquid:S3457b"%String contains no format specifiers.(êæïùÿÿÿÿ8°Ûªä-
+Hsquid:S3457>"%String contains no format specifiers.(êæïùÿÿÿÿ8’Â¸æâ-
+[
+squid:S106b"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8°Ûªä-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(æË“¯üÿÿÿÿ8®°ÂÎâ-
+Csquid:S3457g"%String contains no format specifiers.(æë°œ8ò¤¨Ïâ-
+Hsquid:S3457^"%String contains no format specifiers.(êæïùÿÿÿÿ8¤¿ÜÀã-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(İÔ¬‚8“ÆëÎâ-
+[
+squid:S106>"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8’Â¸æâ-
+Hsquid:S3457V"%String contains no format specifiers.(êæïùÿÿÿÿ8µüÂæâ-
+[
+squid:S106V"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8É¾¹æâ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(„ˆ¼Âøÿÿÿÿ8“ÆëÎâ-
+Hsquid:S3457F"%String contains no format specifiers.(êæïùÿÿÿÿ8»î¸æâ-
+osquid:S3457g"Q%n should be used in place of \n to produce the platform-specific line separator.(æë°œ8ò¤¨Ïâ-
+tsquid:S3457N"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8¡ ¹æâ-
+tsquid:S3457V"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8É¾¹æâ-
+rsquid:S1192"ODefine a constant instead of duplicating this literal "Illegal move\n" 8 times.(êæïùÿÿÿÿ8™¦ùÀã-
+Hsquid:S34576"%String contains no format specifiers.(êæïùÿÿÿÿ8Ú£¸æâ-
+[
+squid:S106N"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8¡ ¹æâ-
+Csquid:S3457"%String contains no format specifiers.(İÔ¬‚8“ÆëÎâ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8É²¢ä-
+tsquid:S3457F"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8ª¬Ãæâ-
+tsquid:S3457>"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8îÃÃæâ-
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8»î¸æâ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ëØ¶‘ıÿÿÿÿ8®°ÂÎâ-
+Hsquid:S3457"%String contains no format specifiers.(„ˆ¼Âøÿÿÿÿ8“ÆëÎâ-
+tsquid:S3457b"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8°Ûªä-
+[
+squid:S106^"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8¤¿ÜÀã-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 66 to the 15 allowed.(Çµí‘8®°ÂÎâ-
+Msquid:S1066k"/Merge this if statement with the enclosing one.(À©»8ĞÓ›ˆã-
+V
+squid:S106l"9Replace this use of System.out or System.err by a logger.(æë°œ8ò¤¨Ïâ-
+n squid:LabelsShouldNotBeUsedCheck0";Refactor the code to remove this label and the need for it.(Ìê†µ8’„¯ä-
+[
+squid:S1066"9Replace this use of System.out or System.err by a logger.(êæïùÿÿÿÿ8Ú£¸æâ-
+osquid:S3457l"Q%n should be used in place of \n to produce the platform-specific line separator.(æë°œ8ò¤¨Ïâ-
+tsquid:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8É²¢ä-
+tsquid:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(„ˆ¼Âøÿÿÿÿ8”³øÀã-
+Hsquid:S3457"%String contains no format specifiers.(ëØ¶‘ıÿÿÿÿ8®°ÂÎâ-
+Hsquid:S3457"%String contains no format specifiers.(æË“¯üÿÿÿÿ8®°ÂÎâ-
+Hsquid:S3457N"%String contains no format specifiers.(êæïùÿÿÿÿ8ÿ–Ãæâ-
+{
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8®°ÂÎâ-
+tsquid:S3457^"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8¤¿ÜÀã-
+Hsquid:S3457"%String contains no format specifiers.(êæïùÿÿÿÿ8É²¢ä-
+Csquid:S3457l"%String contains no format specifiers.(æë°œ8ò¤¨Ïâ-
+osquid:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(İÔ¬‚8éœøÀã-
+Msquid:S1481"*Remove this unused "check" local variable.(’¼Œ‹øÿÿÿÿ8‹ı£‡ã-
+V
+squid:S106g"9Replace this use of System.out or System.err by a logger.(æë°œ8ò¤¨Ïâ-
+tsquid:S34576"Q%n should be used in place of \n to produce the platform-specific line separator.(êæïùÿÿÿÿ8ğ×Ãæâ-

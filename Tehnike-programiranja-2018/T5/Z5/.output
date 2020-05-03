@@ -1,0 +1,4 @@
+Unesite broj podintervala: Za taj broj podintervala priblizne vrijednosti integrala iznose:
+- Za funkciju sin x na intervalu (0,pi): 1.99966
+- Za funkciju x^3 na intervalu (0,10): 2500.51
+- Za funkciju 1/x na intervalu (1,2): 0.69316

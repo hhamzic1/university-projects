@@ -1,0 +1,8 @@
+/rhome/h/hhamzic1/workspace/NA/Z1/Z1/main.cpp: In function ‘Vector operator/(const Vector&, double)’:
+/rhome/h/hhamzic1/workspace/NA/Z1/Z1/main.cpp:206:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if (s == 0) throw std::domain_error("Division by zero");
+            ^
+/rhome/h/hhamzic1/workspace/NA/Z1/Z1/main.cpp: In member function ‘Vector& Vector::operator/=(double)’:
+/rhome/h/hhamzic1/workspace/NA/Z1/Z1/main.cpp:216:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if (s == 0) throw std::domain_error("Division by zero");
+            ^
